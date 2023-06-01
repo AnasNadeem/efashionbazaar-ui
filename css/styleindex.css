@@ -1,0 +1,42 @@
+/* Universal i.e for all CSS Start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: 'Acme', sans-serif; */
+    /* font-family: "Muli", sans-serif; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --blackCol: #000000;
+    --whiteCol: #ffffff;
+    --accentCol: #ffd1e6;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+    color: var(--whiteCol);
+}
+
+/* Universal CSS Ends  */
