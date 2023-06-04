@@ -165,4 +165,9 @@ li {
     opacity: 1;
     transition: opacity .6s ease;
 }
+.carousel-inner img {
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+}
 /* Banner CSS Ends */
