@@ -207,5 +207,14 @@ li {
 }
 .catalogImageBody{
     margin: 2rem;
+    position: relative;
+}
+.catalogImageBody span{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: white;
+    font-size: x-large;
+    font-family: 'Dancing Script';
 }
 /* Catalog CSS Ends */
