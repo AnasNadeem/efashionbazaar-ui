@@ -236,6 +236,27 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.productCardImageContainer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    right: 1.4rem;
+    border-radius: 50%;
+    background-color: var(--whiteCol);
+}
+.productCardImageContainer span i{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.productCardImageContainer span:hover, .productCardImageContainer span i:hover{
+    background-color: var(--secondaryAccentColor);
+    color: var(--whiteCol);
 }
 .productCardImage{
     width: 100%;
