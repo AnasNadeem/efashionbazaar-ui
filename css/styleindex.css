@@ -136,3 +136,20 @@ li {
     color: var(--secondaryAccentColor);
 }
 /* Navbar CSS Ends */
+/* Category Navbar CSS Start */
+.categoryNavbar {
+    height: auto;
+    background-color: var(--whiteCol);
+}
+
+.categoryNavbarUl{
+    flex-direction: row;
+}
+
+.categoryNavbarList{
+    margin: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--blackCol);
+}
+/* Category Navbar CSS Ends */
