@@ -178,7 +178,6 @@ li {
 .catalogSection{
     height: 25rem;
     margin-top: 3rem;
-    /* background-color: rgba(242, 205, 136, .6); */
 }
 .sectionMainTitleContainer{
     display: flex;
@@ -193,12 +192,18 @@ li {
     color: var(--goldenCol);
     font-family: 'Dancing Script', sans-serif;
 }
+.catalogSectionBody{
+    background-color: rgba(242, 205, 136, .6);
+    margin-top: 6rem;
+}
 .catalogImageContainer{
-    /* margin-top: 2rem; */
+    position: relative;
+    top: -7rem;
+}
+.catalogImageContainerBody{
     display: flex;
     justify-content: center;
     align-items: start;
-    /* margin: 2rem; */
 }
 .catalogImageBody{
     margin: 2rem;
