@@ -42,37 +42,33 @@ li {
 }
 
 /* Universal CSS Ends  */
+
 /* Navbar CSS Start */
 .topNavbar {
     height: auto;
     background-color: var(--primaryAccentColor);
 }
-
 .topNavbar .navbar-brand {
     font-size: 1rem;
     font-weight: 600;
     color: var(--secondaryAccentColor);
 }
-
 .topNavbarBody{
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin: .4rem 2rem .4rem 2rem;  /* top right bottom left */
 }
-
 .topNavbarLogo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .topNavbarSearch{
     display: flex;
     flex-direction: row;
     min-width: 25rem;
 }
-
 .topNavbarSearchDropdown{
     display: flex;
     align-items: center;
@@ -80,47 +76,39 @@ li {
     background-color: var(--lightGreyCol) !important;
     border: 1px solid var(--blackCol);
 }
-
 .topNavbarSearchDropdownBtn{
     background-color: var(--lightGreyCol) !important;
     border: none;
     width: auto;
     font-size: .8rem;
 }
-
 .topNavbarSearchInput{
     background-color: var(--whiteCol) !important;
     border: 1px solid var(--blackCol) !important;
     border-radius: 0px;
 }
-
 .topNavbarSearchInput:focus,
 .topNavbarSearchInput:active {
   /* box-shadow: 0 0 0 0.25rem var(--primaryAccentColor); */
   box-shadow: none;
 }
-
 .topNavbarSearchInput::placeholder{
     color: var(--blackCol);
     font-size: .8rem;
 }
-
 .topNavbarSearchBtn{
     background-color: var(--secondaryAccentColor) !important;
     border: 1px solid var(--blackCol);
     border-radius: 0px;
     width: auto;
 }
-
 .searchIcon{
     color: var(--whiteCol);
 }
-
 .topNavbarRightEnd{
     display: flex;
     align-items: center;
 }
-
 .navbarLoginBtn{
     background-color: var(--secondaryAccentColor) !important;
     border: 1px solid var(--blackCol);
@@ -131,21 +119,19 @@ li {
     margin-right: 1.4rem; /* to separate login and cart icon */
     padding: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
 }
-
 .navbarWishlistIcon, .navbarCartIcon {
     color: var(--secondaryAccentColor);
 }
 /* Navbar CSS Ends */
+
 /* Category Navbar CSS Start */
 .categoryNavbar {
     height: auto;
     background-color: var(--whiteCol);
 }
-
 .categoryNavbarUl{
     flex-direction: row;
 }
-
 .categoryNavbarList{
     margin: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
     font-size: .9rem;
@@ -153,3 +139,35 @@ li {
     color: var(--blackCol);
 }
 /* Category Navbar CSS Ends */
+
+/* Banner CSS Start */
+.bannerIndicators{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 1.8rem;
+    margin-right: 9%; /* to align indicators to right */
+}
+.bannerIndicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: .8rem;
+    height: .8rem;
+    padding: 0;
+    margin-right: .4rem;
+    margin-left: .4rem;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: var(--whiteCol);
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity .6s ease;
+}
+.carousel-inner img {
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+}
+/* Banner CSS Ends */
