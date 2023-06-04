@@ -24,6 +24,7 @@ li {
     --blackCol: #000000;
     --whiteCol: #ffffff;
     --lightGreyCol: #f5f5f5;
+    --goldenCol: #CDB480;
     --primaryAccentColor: #F2CD88;
     --secondaryAccentColor: #8C2703;
 }
@@ -46,7 +47,8 @@ li {
 /* Navbar CSS Start */
 .topNavbar {
     height: auto;
-    background-color: var(--primaryAccentColor);
+    /* background-color: var(--primaryAccentColor); */
+    background-color: rgba(242, 205, 136, .6);
 }
 .topNavbar .navbar-brand {
     font-size: 1rem;
@@ -171,3 +173,39 @@ li {
     height: 100%;
 }
 /* Banner CSS Ends */
+
+/* Catalog CSS Start */
+.catalogSection{
+    height: 25rem;
+    margin-top: 3rem;
+}
+.sectionMainTitleContainer{
+    display: flex;
+    justify-content: center;
+}
+.goldenImgIcon{
+    color: var(--goldenCol);
+}
+.sectionMainTitle{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--goldenCol);
+    font-family: 'Dancing Script', sans-serif;
+}
+.catalogSectionBody{
+    background-color: rgba(242, 205, 136, .6);
+    margin-top: 6rem;
+}
+.catalogImageContainer{
+    position: relative;
+    top: -7rem;
+}
+.catalogImageContainerBody{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.catalogImageBody{
+    margin: 2rem;
+}
+/* Catalog CSS Ends */
