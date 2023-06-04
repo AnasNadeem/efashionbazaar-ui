@@ -238,23 +238,32 @@ li {
     align-items: center;
     position: relative;
 }
-.productCardImageContainer span{
+.iconSpaninProductCard{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 2rem;
-    height: 2rem;
-    top: 1rem;
     right: 1.4rem;
     border-radius: 50%;
     background-color: var(--whiteCol);
 }
-.productCardImageContainer span i{
+.wishlistIconInProductCard{
+    top: 1rem;
+}
+.eyeIconInProductCard{
+    top: 3.4rem;
+}
+.iconSpaninProductCard i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
     cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
-.productCardImageContainer span:hover, .productCardImageContainer span i:hover{
+.iconSpaninProductCard:hover, .iconSpaninProductCard i:hover{
     background-color: var(--secondaryAccentColor);
     color: var(--whiteCol);
 }
@@ -275,13 +284,14 @@ li {
 .productCardDetailsTitle{
     font-size: 1rem;
     font-weight: 600;
+    opacity: .7;
     line-height: 1.4;
     color: var(--blackCol);
     margin-bottom: 0;
 }
 .productCardDetailsPrice{
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--blackCol);
     margin-bottom: 0;
 }
