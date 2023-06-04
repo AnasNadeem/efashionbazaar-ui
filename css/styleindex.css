@@ -189,18 +189,20 @@ li {
 .sectionMainTitle{
     font-size: 1.8rem;
     font-weight: 500;
-    color: var(--goldenCol);
     font-family: 'Dancing Script', sans-serif;
+}
+.goldenTitle{
+    color: var(--goldenCol);
 }
 .catalogSectionBody{
     background-color: rgba(242, 205, 136, .6);
     margin-top: 6rem;
 }
-.catalogImageContainer{
+.catalogSectionBodyContainer{
     position: relative;
     top: -7rem;
 }
-.catalogImageContainerBody{
+.catalogImageContainer{
     display: flex;
     justify-content: center;
     align-items: start;
