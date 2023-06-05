@@ -227,6 +227,7 @@ li {
     background-color: rgba(242, 205, 136, .6);
     width: 100%;
     height: auto;
+    padding: 0 0 2rem 0;  /* top right bottom left */
 }
 .productCardContainer{
     display: flex;
@@ -417,5 +418,48 @@ li {
     height: .1rem;
     background-color: var(--whiteCol);
     margin: 2rem 0 2rem 0;
+}
+.footerSectionBody{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.footerSectionBodyCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.footerSectionBodyCardTitle{
+    font-size: 1.2rem;
+    color: var(--whiteCol);
+    margin-bottom: 1.6rem;
+}
+.footerSectionBodyCardList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footerSectionBodyCardListItem{
+    font-size: .8rem;
+    color: var(--whiteCol);
+    margin-bottom: 1rem;
+}
+.footerSectionBodyCardListItem a{
+    color: var(--whiteCol);
+}
+.footerSectionBodyCardListItem a:hover{
+    color: var(--goldenCol);
+}
+.footerSectionBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.footerSectionBottomText{
+    font-size: .8rem;
+    color: var(--whiteCol);
+    margin-bottom: 0;
 }
 /* Footer CSS Ends  */
