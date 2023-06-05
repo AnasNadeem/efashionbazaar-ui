@@ -225,6 +225,8 @@ li {
 /* New Arrival CSS Start */
 .newArrivalSection{
     background-color: rgba(242, 205, 136, .6);
+    width: 100%;
+    height: auto;
 }
 .productCardContainer{
     display: flex;
@@ -258,7 +260,7 @@ li {
     top: 1rem;
 }
 .eyeIconInProductCard{
-    top: 3.4rem;
+    top: 3.6rem;
 }
 .iconSpaninProductCard i{
     display: flex;
@@ -285,13 +287,13 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--whiteCol);
+    background-color: var(--lightGreyCol);
     padding: 0;
 }
 .productCardDetailsTitle{
     font-size: 1rem;
     font-weight: 600;
-    opacity: .7;
+    opacity: .8;
     line-height: 1.4;
     color: var(--blackCol);
     margin-bottom: 0;
@@ -330,3 +332,35 @@ li {
     margin-top: 2rem
 }
 /* Trending Products CSS Ends */
+
+/* Logo section CSS Start */
+.logoSection{
+    width: 100%;
+    height: auto;
+    /* margin-top: 3rem; Will give margin from logo itself */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flowerbesideMadeOfIndia{
+    color: var(--goldenCol);
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.logoSectionCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoSectionCardImage{
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.logoSectionCardDetailsTitle{
+    font-size: 1.2rem;
+    color: var(--blackCol);
+    margin-bottom: 0;
+}
+/* Logo section CSS Ends */
