@@ -515,6 +515,20 @@ li {
     height: auto;
     padding: 0 1rem 0 0;  /* top right bottom left */
 }
+.filterAccordionItem{
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+.filterAccordionBtn{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    border-color: var(--bs-accordion-border-color) !important;
+}
 .searchResultContainer{
     width: 80%;
     height: auto;
