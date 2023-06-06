@@ -51,7 +51,7 @@ li {
     background-color: rgba(242, 205, 136, .6);
 }
 .topNavbar .navbar-brand {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--secondaryAccentColor);
 }
@@ -76,7 +76,7 @@ li {
     align-items: center;
     justify-content: center;
     background-color: var(--lightGreyCol) !important;
-    border: 1px solid var(--blackCol);
+    border: .4px solid var(--goldenCol) !important;
 }
 .topNavbarSearchDropdownBtn{
     background-color: var(--lightGreyCol) !important;
@@ -86,7 +86,7 @@ li {
 }
 .topNavbarSearchInput{
     background-color: var(--whiteCol) !important;
-    border: 1px solid var(--blackCol) !important;
+    border: .4px solid var(--goldenCol) !important;
     border-radius: 0px;
 }
 .topNavbarSearchInput:focus,
@@ -100,7 +100,7 @@ li {
 }
 .topNavbarSearchBtn{
     background-color: var(--secondaryAccentColor) !important;
-    border: 1px solid var(--blackCol);
+    /* border: .4px solid var(--goldenCol) !important; */
     border-radius: 0px;
     width: auto;
 }
@@ -136,13 +136,21 @@ li {
 }
 .categoryNavbarList{
     margin: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
-    font-size: .9rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--blackCol);
 }
 /* Category Navbar CSS Ends */
 
 /* Banner CSS Start */
+.bannerContainer{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4rem 0 4rem; /* top right bottom left */
+    width: fit-content;
+}
 .bannerIndicators{
     display: flex;
     justify-content: end;
@@ -176,6 +184,7 @@ li {
 
 /* Catalog CSS Start */
 .catalogSection{
+    width: 100%;
     height: auto;
     margin-top: 3rem;
 }
