@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Third party css starts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Third party css ends -->
+    <!-- App css starts -->
+    <link rel="stylesheet" href="css/styleindex.css">
+    <!-- App css ends -->
+    <!-- Font Awesome Icons starts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome Icons ends -->
+    <!-- Google Fonts starts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
+    <!-- Google Fonts ends -->
+    <title>efashionbazaar</title>
+</head>
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-light topNavbar">
+        <div class="container-fluid">
+            <div class="topNavbarBody">
+                <div class="topNavbarLogo">
+                    <a href="#" class="navbar-brand">
+                        E Fashion Bazaar
+                    </a>
+                </div>
+                <div class="topNavbarSearch">
+                    <!-- dropdown to select category -->
+                    <div class="dropdown topNavbarSearchDropdown">
+                        <button class="btn dropdown-toggle topNavbarSearchDropdownBtn" type="button" id="dropdownMenu2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All
+                        </button>
+                        <ul class="dropdown-menu topNavbarSearchDropdownMenu" aria-labelledby="dropdownMenu2">
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                    </div>
+                    <!-- dropdown ends -->
+                    <input type="text" name="search" class="form-control topNavbarSearchInput"
+                        placeholder="Search Products" required>
+                    <button class="btn topNavbarSearchBtn" type="submit">
+                        <i class="fas fa-search searchIcon"></i>
+                    </button>
+                </div>
+                <div class="topNavbarRightEnd">
+                    <a href="#" class="btn navbarLoginBtn">Login</a>
+                    <div class="topNavbarIcons">
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-heart navbarWishlistIcon"></i>
+                        </a>
+                        <a href="#" class="nav-item">
+                            <i class="fas fa-shopping-cart navbarCartIcon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Category Navbar starts -->
+    <div class="container">
+        <nav class="navbar navbar-light categoryNavbar">
+            <div class="container">
+                <ul class="navbar-nav categoryNavbarUl mx-auto">
+                    <li class="nav-item categoryNavbarList">
+                        <a class="nav-link" href="#">Men</a>
+                    </li>
+                    <li class="nav-item categoryNavbarList">
+                        <a class="nav-link" href="#">Women</a>
+                    </li>
+                    <li class="nav-item categoryNavbarList">
+                        <a class="nav-link" href="#">Kids</a>
+                    </li>
+                </ul>
+              </div>
+        </nav>
+    </div>
+    <!-- Category Navbar ends  -->
+
+    <!-- Logo Section Starts -->
+    <section class="logoSection">
+        <img src="images/icons/logo-made-in-india-left.png" class="flowerbesideMadeOfIndia" alt="">
+        <div class="logoSectionCard">
+            <img src="images/icons/made_in_india.png" class="logoSectionCardImage" alt="">
+            <h3 class="logoSectionCardDetailsTitle">Made In India</h3>
+            </div>
+        </div>
+        <div class="logoSectionCard">
+            <img src="images/icons/secure-payments.png" class="logoSectionCardImage" alt="">
+            <h3 class="logoSectionCardDetailsTitle">Secure Payments</h3>
+            </div>
+        </div>
+        <div class="logoSectionCard">
+            <img src="images/icons/assured-quality.png" class="logoSectionCardImage" alt="">
+            <h3 class="logoSectionCardDetailsTitle">Assured Quality</h3>
+            </div>
+        </div>
+        <div class="logoSectionCard">
+            <img src="images/icons/stitching-service.png" class="logoSectionCardImage" alt="">
+            <h3 class="logoSectionCardDetailsTitle">Stitching Service</h3>
+            </div>
+        </div>
+        <div class="logoSectionCard">
+            <img src="images/icons/empowering-weaver.png" class="logoSectionCardImage" alt="">
+            <h3 class="logoSectionCardDetailsTitle">Empowering Weaver</h3>
+            </div>
+        </div>
+        <img src="images/icons/logo-made-in-india-right.png" class="flowerbesideMadeOfIndia" alt="">
+    </section>
+    <!-- Logo Section Ends -->
+
+    <!-- Footer Starts -->
+    <section class="footerSection">
+        <div class="container">
+            <div class="footerSectionTitle">
+                <h3 class="footerSectionTitleText">E Fashion Bazaar</h3>
+                <div class="footerNewsLetterContainer">
+                    <h4 class="subscribeNewsletterTitle">
+                        Subscribe to our Newsletter
+                    </h4>
+                    <input type="text" class="footerNewsLetterInput" placeholder="Enter your email address">
+                    <a href="#" class="btn footerNewsLetterBtn">Submit</a>
+                </div>
+            </div>
+            <hr class="footerHr">
+            <div class="footerSectionBody">
+                <div class="footerSectionBodyCard">
+                    <h5 class="footerSectionBodyCardTitle">
+                        Categories
+                    </h5>
+                    <ul class="footerSectionBodyCardList">
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Men - Sherwani</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Men - Kurta Pajama</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Women - Lehnga</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Kids - Kurta Pajama</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerSectionBodyCard">
+                    <h5 class="footerSectionBodyCardTitle">
+                        Quick Links
+                    </h5>
+                    <ul class="footerSectionBodyCardList">
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">About Us</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Store Locator</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerSectionBodyCard">
+                    <h5 class="footerSectionBodyCardTitle">
+                        Our Policies
+                    </h5>
+                    <ul class="footerSectionBodyCardList">
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Privacy Policy</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Terms & Conditions</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Return Policy</a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">Cookies Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerSectionBodyCard">
+                    <h5 class="footerSectionBodyCardTitle">
+                        Contact Us
+                    </h5>
+                    <ul class="footerSectionBodyCardList">
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">
+                                <i class="fas fa-envelope footerSectionBodyCardLinkIcon"></i>
+                            </a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">
+                                <i class="fas fa-phone-alt footerSectionBodyCardLinkIcon"></i>
+                            </a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">
+                                <i class="fab fa-facebook-f footerSectionBodyCardLinkIcon"></i>
+                            </a>
+                            </a>
+                        </li>
+                        <li class="footerSectionBodyCardListItem">
+                            <a href="#" class="footerSectionBodyCardLink">
+                                <i class="fab fa-instagram footerSectionBodyCardLinkIcon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footerHr">
+            <div class="footerSectionBottom">
+                <p class="footerSectionBottomText">
+                    © 2023 E Fashion Bazaar. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Ends  -->
+
+    <!-- Third party js starts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Third party js ends -->
+</body>
+</html>
