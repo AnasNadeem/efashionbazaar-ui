@@ -551,4 +551,11 @@ li {
     border-radius: 0px;
     border: 1px solid var(--blackCol) !important;
 }
+.searchResultproducts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
 /* Seach Secion CSS Ends */
