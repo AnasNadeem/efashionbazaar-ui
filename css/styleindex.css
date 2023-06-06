@@ -508,7 +508,7 @@ li {
     width: 100%;
     height: auto;
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 .filterBodyContainer{
     width: 20%;
@@ -551,3 +551,4 @@ li {
     border-radius: 0px;
     border: 1px solid var(--blackCol) !important;
 }
+/* Seach Secion CSS Ends */
