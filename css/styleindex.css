@@ -529,6 +529,69 @@ li {
     border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
     border-color: var(--bs-accordion-border-color) !important;
 }
+.priceField{
+    width: 100%;
+    display: flex;
+    background-color: rgb(150, 150, 150);
+    /* font-size: 1rem;
+    font-weight: 500; */
+}
+.priceField input[type="number"]{
+    width: 100%;
+    outline: 0;
+    border: none;
+    -moz-appearance: textfield;
+}
+.priceField input[type="number"]::-webkit-inner-spin-button,
+.priceField input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    /* margin: 0; */
+}
+.price-slider{
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(133, 130, 130);
+    position: relative;
+}
+.price-slider .progress{
+    height: 5px;
+    position: absolute;
+    border-radius: 5px;
+    left: 25%;
+    right: 25%;
+    background-color: var(--secondaryAccentColor);
+}
+.priceRange-input{
+    position: relative;
+}
+.priceRange-input input{
+    position: absolute;
+    height: 5px;
+    top: -5px;
+    width: 100%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    background: none;
+}
+.priceRange-input input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--secondaryAccentColor);
+    pointer-events: auto;
+    /* margin-top: -8px; */
+}
+.priceRange-input input[type="range"]::-moz-range-thumb{
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background: var(--secondaryAccentColor);
+    /* margin-top: -8px; */
+}
 .searchResultContainer{
     width: 80%;
     height: auto;
