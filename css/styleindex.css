@@ -532,9 +532,7 @@ li {
 .priceField{
     width: 100%;
     display: flex;
-    background-color: rgb(150, 150, 150);
-    /* font-size: 1rem;
-    font-weight: 500; */
+    margin: .3rem;
 }
 .priceField input[type="number"]{
     width: 100%;
@@ -545,12 +543,17 @@ li {
 .priceField input[type="number"]::-webkit-inner-spin-button,
 .priceField input[type="number"]::-webkit-outer-spin-button{
     -webkit-appearance: none;
-    /* margin: 0; */
+}
+.priceFieldInputMax{
+    text-align: right;
+}
+.priceFieldInputMin{
+    text-align: left;
 }
 .price-slider{
     height: 5px;
     border-radius: 5px;
-    background-color: rgb(133, 130, 130);
+    background-color: rgb(133 130 130 / 20%);
     position: relative;
 }
 .price-slider .progress{
@@ -559,7 +562,7 @@ li {
     border-radius: 5px;
     left: 25%;
     right: 25%;
-    background-color: var(--secondaryAccentColor);
+    background-color: #D9631E;
 }
 .priceRange-input{
     position: relative;
@@ -578,9 +581,8 @@ li {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--secondaryAccentColor);
+    background: #D9631E;
     pointer-events: auto;
-    /* margin-top: -8px; */
 }
 .priceRange-input input[type="range"]::-moz-range-thumb{
     height: 20px;
@@ -590,11 +592,17 @@ li {
     pointer-events: auto;
     -moz-appearance: none;
     background: var(--secondaryAccentColor);
-    /* margin-top: -8px; */
+}
+.categorySearchBox input{
+    width: 100%;
 }
 .searchResultContainer{
     width: 80%;
     height: auto;
+}
+.categoryList a{
+    margin-top: .4rem; 
+    color: black;
 }
 .searchResultContainerHead{
     display: flex;
