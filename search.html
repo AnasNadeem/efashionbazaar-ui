@@ -504,14 +504,12 @@
         // let priceField = document.querySelector('.priceField');
         let priceInput = document.querySelectorAll('.priceField input');
         let progress = document.querySelector('.price-slider .progress');
-        console.log(rangeInput, priceInput, progress);
         let priceGap = 1000;
 
         priceInput.forEach(input => {
             input.addEventListener('input', e => {
                 let minVal =parseInt(priceInput[0].value);
                 let maxVal =parseInt(priceInput[1].value);
-                // console.log(percent);
                 if((maxVal - minVal >= priceGap)&& maxVal <= 10000){
                     if(e.target.className === "priceFieldInputMin"){
                         rangeInput[0].value = minVal;
@@ -529,7 +527,6 @@
             input.addEventListener('input', e => {
                 let minVal =parseInt(rangeInput[0].value);
                 let maxVal =parseInt(rangeInput[1].value);
-                // console.log(percent);
                 if(maxVal - minVal < priceGap){
                     if(e.target.className === "priceRangeInputMin"){
                         rangeInput[0].value = maxVal - priceGap;
