@@ -529,9 +529,80 @@ li {
     border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
     border-color: var(--bs-accordion-border-color) !important;
 }
+.priceField{
+    width: 100%;
+    display: flex;
+    margin: .3rem;
+}
+.priceField input[type="number"]{
+    width: 100%;
+    outline: 0;
+    border: none;
+    -moz-appearance: textfield;
+}
+.priceField input[type="number"]::-webkit-inner-spin-button,
+.priceField input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.priceFieldInputMax{
+    text-align: right;
+}
+.priceFieldInputMin{
+    text-align: left;
+}
+.price-slider{
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(133 130 130 / 20%);
+    position: relative;
+}
+.price-slider .progress{
+    height: 5px;
+    position: absolute;
+    border-radius: 5px;
+    left: 25%;
+    right: 25%;
+    background-color: #D9631E;
+}
+.priceRange-input{
+    position: relative;
+}
+.priceRange-input input{
+    position: absolute;
+    height: 5px;
+    top: -5px;
+    width: 100%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    background: none;
+}
+.priceRange-input input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #D9631E;
+    pointer-events: auto;
+}
+.priceRange-input input[type="range"]::-moz-range-thumb{
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background: var(--secondaryAccentColor);
+}
+.categorySearchBox input{
+    width: 100%;
+}
 .searchResultContainer{
     width: 80%;
     height: auto;
+}
+.categoryList a{
+    margin-top: .4rem; 
+    color: black;
 }
 .searchResultContainerHead{
     display: flex;
