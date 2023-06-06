@@ -521,11 +521,7 @@
                         rangeInput[1].value = maxVal;
                         progress.style.right = 100 - (maxVal/rangeInput[1].max)*100 + "%";
                     }
-                    // minVal =parseInt(rangeInput[0].value);
-                }
-              
-               
-                // rangeValue.innerHTML = `₹ ${value1} - ₹ ${value2}`;
+                }               
             })
         })
 
@@ -541,7 +537,6 @@
                     else{
                         rangeInput[1].value = minVal + priceGap;
                     }
-                    // minVal =parseInt(rangeInput[0].value);
                 }
                 else{
                     priceInput[0].value = minVal;
@@ -550,7 +545,6 @@
                 progress.style.right = 100 - (maxVal/rangeInput[1].max)*100 + "%";
                 }
                
-                // rangeValue.innerHTML = `₹ ${value1} - ₹ ${value2}`;
             })
         })
     </script>
