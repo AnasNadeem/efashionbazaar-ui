@@ -140,6 +140,37 @@ li {
     font-weight: 600;
     color: var(--blackCol);
 }
+#CategoryNavbarContainer{
+    position: relative;
+}
+.nav-megaDropdown{
+    position: absolute;
+    border: 2px solid;
+    background: var(--whiteCol);
+    left: 2px;
+    right: 2px;
+    z-index: 22;
+    opacity: 0;
+    visibility: hidden;
+}
+#categoryNavbarListMen:hover #nav-megaDropdownForMen { 
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease;
+}
+#categoryNavbarListWomen:hover #nav-megaDropdownForWomen { 
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease;
+}
+#categoryNavbarListKids:hover #nav-megaDropdownForKids { 
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease;
+}
+.nav-megaDropdownContent{
+    display: flex;
+}
 /* Category Navbar CSS Ends */
 
 /* Banner CSS Start */
