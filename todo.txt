@@ -1,0 +1,7 @@
+# FALAK TODO:
+1. Zoom image on hover
+2. Category dropdown for type Men/Women/Kids as in Rajwadi and Manyawar
+
+# ANAS TODO:
+1. Product detail page
+2. In product card when clicks on eye, open Modal on Product details
