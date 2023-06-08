@@ -806,7 +806,6 @@ li {
     height: .1rem;
     background-color: var(--blackCol);
     margin: 0;
-    margin-bottom: .5rem;
 }
 .productdetailOptionsItemContainer{
     width: 100%;
@@ -819,8 +818,7 @@ li {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: .5rem;
-    margin-right: 2rem;
+    margin: 1rem 2rem 1rem 0; /* top right bottom left */
 }
 .productdetailOptionItemContainer{
     display: flex;
@@ -848,4 +846,28 @@ li {
     font-size: 1rem;
     font-weight: 600;
     color: var(--blackCol);
+}
+.productdetailAdvertisementIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    width: 100%;
+}
+.productdetailAdvertisementIconCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.productdetailAdvertisementIcon{
+    width: auto;
+    height: auto;
+}
+.productdetailAdvertisementIconText{
+    font-size: 1rem;
+    color: var(--blackCol);
+    margin-left: .5rem;
 }
