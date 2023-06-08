@@ -757,6 +757,13 @@ li {
 .addTopSpaceBtn{
     margin-top: 1rem;
 }
+.addBottomSpaceBtn{
+    margin-bottom: 1rem;
+}
+.productCardDetailsBtnDotted{
+    border: 2px solid rgba(0, 0, 0, 0.2) !important;
+    border-style: dashed;
+}
 .productdetailMainTitle{
     font-size: 1.8rem;
     font-weight: 500;
@@ -891,6 +898,7 @@ li {
     font-size: 1rem;
     color: var(--blackCol);
     margin-left: .5rem;
+    margin-bottom: 0;
 }
 .productdetailDescriptionContainer{
     width: 100%;
@@ -900,6 +908,7 @@ li {
 .productdetailDescriptionBox{
     width: 100%;
     height: auto;
+    margin-top: .5rem;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
     border-style: dashed;
@@ -923,3 +932,4 @@ li {
     color: var(--blackCol);
     margin-left: .5rem;
 }
+/* Product details CSS Ends */
