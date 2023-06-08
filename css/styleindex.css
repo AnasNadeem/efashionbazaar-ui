@@ -718,3 +718,53 @@ li {
     flex-wrap: wrap;
 }
 /* Seach Section CSS Ends */
+
+/* Product details CSS Start */
+.productdetailSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.productdetailmainimage{
+    width: 30%;
+    height: auto;
+    position: relative;
+}
+.productdetailmainimageImage{
+    width: 100%;
+    height: auto;
+}
+.productdetailContainer{
+    width: 70%;
+    height: auto;
+    padding: 0 0 0 1rem;  /* top right bottom left */
+}
+.productdetailMainTitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--blackCol);
+}
+.productdetailProdCodeContainer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: .5rem;
+}
+.productdetailProdCodeText{
+    font-size: .8rem;
+    color: var(--blackCol);
+}
+.productdetailProdCodeNumber{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--blackCol);
+    margin-left: .5rem;
+}
+.productdetailPriceNumber{
+    font-size: 1.6rem;
+    color: var(--blackCol);
+    margin-top: .5rem;
+}
