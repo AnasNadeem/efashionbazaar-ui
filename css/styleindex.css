@@ -760,15 +760,15 @@ li {
     color: var(--blackCol);
 }
 .productdetailProdCodeNumber{
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     color: var(--blackCol);
     margin-left: .5rem;
 }
 .productdetailPriceNumber{
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--blackCol);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--secondaryAccentColor);
     margin: .8rem 0 .8rem 0; /* top right bottom left */
 }
 .productdetailRatingContainer{
@@ -793,6 +793,7 @@ li {
     width: 1rem;
     height: 1rem;
     margin-left: .2rem;
+    color: var(--primaryAccentColor);
 }
 .productdetailOptionsContainer{
     display: flex;
@@ -818,7 +819,7 @@ li {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: 1rem 2rem 1rem 0; /* top right bottom left */
+    margin: 1rem 6rem 1rem 0; /* top right bottom left */
 }
 .productdetailOptionItemContainer{
     display: flex;
@@ -829,7 +830,7 @@ li {
 .productdetailOptionItemBox{
     width: 2.2rem;
     height: 2.2rem;
-    border: 1px solid var(--blackCol);
+    border: 2px solid rgba(0, 0, 0, 0.2);;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -842,8 +843,15 @@ li {
 .productdetailOptionItemBox:focus{
     outline: none;
 }
+.productdetailOptionItemBoxHover:hover{
+    border: 1px solid var(--primaryAccentColor);
+    background-color: var(--secondaryAccentColor);
+}
+.productdetailOptionItemBoxHover:hover .productdetailOptionItemBoxText{
+    color: var(--whiteCol);
+}
 .productdetailOptionItemBoxText{
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     color: var(--blackCol);
 }
@@ -851,7 +859,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: .5rem;
+    margin-top: 1rem;
     width: 100%;
 }
 .productdetailAdvertisementIconCard{
@@ -864,7 +872,7 @@ li {
 }
 .productdetailAdvertisementIcon{
     width: auto;
-    height: auto;
+    height: 2.4rem;
 }
 .productdetailAdvertisementIconText{
     font-size: 1rem;
