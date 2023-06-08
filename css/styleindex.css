@@ -879,3 +879,31 @@ li {
     color: var(--blackCol);
     margin-left: .5rem;
 }
+.productdetailDescriptionContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+.productdetailDescriptionBox{
+    width: 100%;
+    height: auto;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    border-style: dashed;
+    padding: 1rem; /* top right bottom left */
+}
+.productdetailDescriptionBoxItem{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: .5rem;
+}
+.productdetailDescriptionBoxItemValue{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--blackCol);
+    margin-left: .5rem;
+}
