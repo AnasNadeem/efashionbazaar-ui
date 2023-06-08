@@ -172,6 +172,24 @@ li {
 .nav-megaDropdownContent{
     display: flex;
 }
+.megaDropdownContentListUl{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 1rem; /* top right bottom left */
+    height: inherit;
+}
+.megaDropdownContentListLi{
+    margin: .4rem 0 .4rem 0; /* top right bottom left */
+}
+.megaDropdownContentListLink{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--blackCol);
+}
+.megaDropdownContentListLink:hover{
+    color: var(--secondaryAccentColor);
+}
 /* Category Navbar CSS Ends */
 
 /* Banner CSS Start */
