@@ -744,6 +744,19 @@ li {
     height: auto;
     padding: 0 0 0 1rem;  /* top right bottom left */
 }
+.productdetailContainerHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.productCardDetailsBtnIcon{
+    font-size: .8rem;
+    margin-left: .5rem;
+}
+.addTopSpaceBtn{
+    margin-top: 1rem;
+}
 .productdetailMainTitle{
     font-size: 1.8rem;
     font-weight: 500;
