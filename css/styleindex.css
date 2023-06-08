@@ -901,9 +901,12 @@ li {
     align-items: center;
     margin-top: .5rem;
 }
+.productdetailDescriptionBoxItemKey{
+    font-size: 1rem;
+    color: var(--blackCol);
+}
 .productdetailDescriptionBoxItemValue{
-    font-size: .8rem;
-    font-weight: 600;
+    font-size: 1rem;
     color: var(--blackCol);
     margin-left: .5rem;
 }
