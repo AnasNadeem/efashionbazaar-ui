@@ -750,9 +750,23 @@ li {
     justify-content: space-between;
     align-items: center;
 }
+.productdetailContainerHeadBody{
+    width: 70%;
+}
+.productdetailContainerHeadFooter{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
 .productCardDetailsBtnIcon{
-    font-size: .8rem;
+    font-size: 1rem;
     margin-left: .5rem;
+}
+.productdetailBtn{
+    width: 100%;
+    font-size: 1rem;
 }
 .addTopSpaceBtn{
     margin-top: 1rem;
