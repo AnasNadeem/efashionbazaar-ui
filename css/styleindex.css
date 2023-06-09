@@ -413,6 +413,9 @@ li {
     color: var(--blackCol);
     margin-bottom: 0;
 }
+.productCardDetailsTitle:hover{
+    color: var(--secondaryAccentColor);
+}
 .productCardDetailsPrice{
     font-size: 1rem;
     font-weight: 600;
