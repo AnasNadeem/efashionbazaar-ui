@@ -795,6 +795,10 @@ li {
 .productdetailmainimage:hover .zoomed-image-container{
     display: block;
 }
+.zoomed-image-container img{
+    width: 100%;
+    height: auto;
+}
 .productdetailContainer{
     width: 70%;
     height: auto;

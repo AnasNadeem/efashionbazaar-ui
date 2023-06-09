@@ -133,7 +133,7 @@
             <div class="productdetailmainimage">
                 <img src="images/product/women-ethnic.jpg" class="productdetailmainimageImage" alt="" id="product-image">
                 <div class="zoomed-image-container">
-                    <img src="images/product/women-ethnic.jpg" class="productdetailmainimageImage" alt="" id="zoomed-image">
+                    <img src="images/product/women-ethnic.jpg" alt="" id="zoomed-image">
                 </div>
                 <span class="iconSpaninProductCard wishlistIconInProductCard">
                     <i class="far fa-heart navbarWishlistIcon"></i>
@@ -414,7 +414,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Third party js ends -->
     <script>
-        const productImage = document.getElementById("product-image");
+        const productImage = document.querySelector(".productdetailmainimageImage");
         const zoomedImage = document.getElementById("zoomed-image");
 
         productImage.addEventListener('mousemove', (e) => {
