@@ -777,10 +777,23 @@ li {
     width: 30%;
     height: auto;
     position: relative;
+    display: inline-block;
 }
 .productdetailmainimageImage{
     width: 100%;
     height: auto;
+}
+.zoomed-image-container{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 999;
+}
+.productdetailmainimage:hover .zoomed-image-container{
+    display: block;
 }
 .productdetailContainer{
     width: 70%;
