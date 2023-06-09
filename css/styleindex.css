@@ -177,7 +177,8 @@ li {
     z-index: 22;
     opacity: 0;
     visibility: hidden;
-    height: 16rem;
+    min-height: 14rem;
+    max-height: 20rem;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 #categoryNavbarListMen:hover #nav-megaDropdownForMen { 
@@ -231,6 +232,12 @@ li {
     width: 100%;
     margin: 1rem 0 0 0; /* top right bottom left */
     border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.megaDropdownContentFooter{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Category Navbar CSS Ends */
 
