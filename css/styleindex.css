@@ -170,13 +170,16 @@ li {
 }
 .nav-megaDropdown{
     position: absolute;
-    border: 2px solid;
+    border: none;
     background: var(--whiteCol);
     left: 2px;
     right: 2px;
     z-index: 22;
     opacity: 0;
     visibility: hidden;
+    min-height: 14rem;
+    max-height: 20rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 #categoryNavbarListMen:hover #nav-megaDropdownForMen { 
     opacity: 1;
@@ -195,6 +198,46 @@ li {
 }
 .nav-megaDropdownContent{
     display: flex;
+    width: 100%;
+}
+.megaDropdownContentBody{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.megaDropdownContentBodyTitle{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--blackCol);
+}
+.megaDropdownContentBodyBtns, .megaDropdownContentBodyFooterBtns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.categoryDropdownBtn{
+    max-width: 14rem;
+    width: 10rem;
+    font-size: .8rem;
+    padding: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
+    border-radius: 0px;
+    border: 2px solid var(--secondaryAccentColor) !important;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.megaDropdownContentBodyHR{
+    width: 100%;
+    margin: 1rem 0 0 0; /* top right bottom left */
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.megaDropdownContentFooter{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Category Navbar CSS Ends */
 
@@ -773,6 +816,12 @@ li {
 }
 .addBottomSpaceBtn{
     margin-bottom: 1rem;
+}
+.addRightSpaceBtn{
+    margin-right: 1rem;
+}
+.addLeftSpaceBtn{
+    margin-left: 1rem;
 }
 .productCardDetailsBtnDotted{
     border: 2px solid rgba(0, 0, 0, 0.2) !important;
