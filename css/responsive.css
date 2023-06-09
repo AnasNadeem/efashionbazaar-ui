@@ -1,0 +1,182 @@
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 399px) {
+	.footerNewsLetterContainer {
+	    display: flex;
+	    align-items: flex-start;
+	    flex-direction: column;
+	}
+	.footerSectionTitle{
+		display: block;
+	}
+	.footerNewsLetterInput {
+    	width: 10.5rem;
+    	font-size: small;
+    	padding-left: .5rem;
+	}
+	.footerSectionBody {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: column;
+	}
+	.footerSectionBodyCardList{
+		display: flex;
+		justify-content: space-around;
+   		flex-wrap: wrap;
+	}
+	.footerSectionBodyCardTitle{
+		margin:auto;
+	}
+	.footerSectionBodyCard{
+		align-items: normal;
+	}
+/*Footer CSS Ends*/
+
+/*Navbar CSS Starts*/
+	.topNavbar {
+	    display: none;
+	}
+/*Navbar CSS Ends*/
+
+/*LogoSection CSS Starts*/
+	.logoSection {
+		display: none;
+	}
+/*LogoSection CSS Ends*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 400px) and (max-width: 576px) {
+
+/*Footer CSS Starts */
+	.footerSectionTitleText{
+		font-size: medium;
+	}
+	.footerNewsLetterContainer {
+	    display: flex;
+	    align-items: flex-start;
+	    flex-direction: column;
+	}
+	.subscribeNewsletterTitle{
+		font-size: medium;
+	}
+	.footerNewsLetterInput {
+    	width: 10.5rem;
+    	font-size: small;
+    	padding-left: .5rem;
+	}
+	.footerNewsLetterContainer {
+    	justify-content: flex-start;
+	}
+	.footerSectionBody {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: column;
+	}
+	.footerSectionBodyCardList{
+		display: flex;
+		justify-content: space-around;
+   		flex-wrap: wrap;
+	}
+	.footerSectionBodyCardTitle{
+		margin:auto;
+	}
+	.footerSectionBodyCard{
+		align-items: normal;
+	}
+	.footerSectionTitle {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	}
+/*Footer CSS Ends*/
+
+/*Navbar CSS Starts*/
+	.topNavbar {
+	    display: none;
+	}
+/*Navbar CSS Ends*/
+
+/*LogoSection CSS Starts*/
+	.logoSection {
+		display: none;
+	}
+/*LogoSection CSS Ends*/
+
+}
+
+/* Medium devices (landscape tablets) */
+@media (min-width: 577px) and (max-width: 767px) {
+
+/*Footer CSS Starts */
+	.footerSectionTitleText{
+		font-size: medium;
+	}
+	.subscribeNewsletterTitle{
+		font-size: medium;
+	}
+	.footerNewsLetterInput{
+		width: 13rem;
+	}
+	.footerNewsLetterBtn{
+		width: 4.5rem;
+		/*float: right;*/
+	}
+	.footerSectionBodyCardTitle {
+		font-size: medium;
+	}
+	.footerNewsLetterContainer{
+		display: block;
+		/*float: right;*/
+	}
+/*Footer CSS Ends*/
+
+/*Navbar CSS Starts*/
+	.topNavbar {
+	    display: none;
+	}
+/*Navbar CSS Ends*/
+
+/*LogoSection CSS Starts*/
+	.logoSection {
+		display: none;
+	}
+/*LogoSection CSS Ends*/
+
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 768px) and (max-width: 1023px) {
+/*Footer CSS Starts */
+	.footerSectionTitleText{
+		font-size: medium;
+	}
+	.subscribeNewsletterTitle{
+		font-size: medium;
+	}
+	.footerNewsLetterInput{
+		width: 13rem;
+	}
+	.footerNewsLetterBtn{
+    	width: 4.5rem;
+	}
+/*Footer CSS Ends*/
+
+/*Navbar CSS Starts*/
+	.topNavbar {
+	    display: none;
+	}
+/*Navbar CSS Ends*/
+
+/*LogoSection CSS Starts*/
+	.logoSection {
+		display: none;
+	}
+/*LogoSection CSS Ends*/
+}
+/*Footer CSS Starts */
+.footerNewsLetterInputContainer{
+	display: flex;
+}
+
