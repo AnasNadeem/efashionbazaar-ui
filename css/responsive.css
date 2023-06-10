@@ -1,7 +1,13 @@
 @media (max-width: 399px) {
 	/* Navbar CSS Starts */
-	.topNavbar {
-	    display: none;
+	.topNavbarBody{
+		margin: .4rem .2rem .4rem .2rem; /* top right bottom left */
+	}
+	.topNavbarSearch{
+		display: none;
+	}
+	.sideNavbarAnchor{
+		display: block;
 	}
 	.categoryNavbar{
 		display: none;
@@ -97,8 +103,11 @@
 
 @media (min-width: 399px) and (max-width: 576px) {
 	/* Navbar CSS Starts */
-	.topNavbar {
-	    display: none;
+	.topNavbarSearch{
+		display: none;
+	}
+	.sideNavbarAnchor{
+		display: block;
 	}
 	.categoryNavbar{
 		display: none;
@@ -187,8 +196,14 @@
 /* Medium devices (landscape tablets) */
 @media (min-width: 576px) and (max-width: 767px) {
 	/* Navbar CSS Starts */
-	.topNavbar {
-	    display: none;
+	.topNavbarSearch{
+		display: none;
+	}
+	.sideNavbarAnchor{
+		display: block;
+	}
+	.categoryNavbar{
+		display: none;
 	}
 	/* Navbar CSS Ends */
 

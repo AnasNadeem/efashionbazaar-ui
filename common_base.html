@@ -48,10 +48,20 @@
         <div class="container-fluid">
             <div class="topNavbarBody">
                 <div class="topNavbarLogo">
+                    <a class="navbar-brand sideNavbarAnchor">
+                        <span id="opensideNavbarTrigger">
+                            <i class="fa fa-bars sideNavbarlogo" aria-hidden="true"></i>
+                        </span>
+                    </a>
                     <a href="index.html" class="navbar-brand">
                         E Fashion Bazaar
                     </a>
                 </div>
+                <!-- Sidebar starts -->
+                <div class="sideNavbar" id="sideNavbar"></div>
+                <!-- Sidebar ends -->
+
+                <!-- Search bar starts -->
                 <div class="topNavbarSearch">
                     <!-- dropdown to select category -->
                     <div class="dropdown topNavbarSearchDropdown">
@@ -72,6 +82,9 @@
                         <i class="fas fa-search searchIcon"></i>
                     </button>
                 </div>
+                <!-- Search bar ends -->
+
+                <!-- Login and cart icon starts -->
                 <div class="topNavbarRightEnd">
                     <a href="#" class="btn navbarLoginBtn">Login</a>
                     <div class="topNavbarIcons">
@@ -83,6 +96,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Login and cart icon ends -->
             </div>
         </div>
     </nav>
@@ -265,7 +279,7 @@
             <hr class="footerHr">
             <div class="footerSectionBottom">
                 <p class="footerSectionBottomText">
-                    © 2023 E Fashion Bazaar. All Rights Reserved.
+                    © <span id="copyrightYear"></span> E Fashion Bazaar. All Rights Reserved.
                 </p>
             </div>
         </div>
@@ -275,5 +289,8 @@
     <!-- Third party js starts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Third party js ends -->
+    <!-- App Js starts -->
+    <script src="js/commonScript.js"></script>
+    <!-- App Js ends -->
 </body>
 </html>
