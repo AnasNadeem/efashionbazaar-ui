@@ -68,7 +68,7 @@
 	/* LogoSection CSS Ends */
 }
 
-@media (min-width: 400px) and (max-width: 576px) {
+@media (min-width: 399px) and (max-width: 576px) {
 	/* Footer CSS Starts */
 	.footerNewsLetterContainer {
 	    display: flex;
@@ -132,7 +132,21 @@
 }
 
 /* Medium devices (landscape tablets) */
-@media (min-width: 577px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
+	/* Catalog CSS Start */
+	.catalogSectionBodyContainer{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.catalogSectionBody{
+		max-height: 54rem;
+	}
+	.catalogImageContainer{
+		flex-wrap: wrap;
+	}
+	/* Catalog CSS End */
+
 	/* Footer CSS Starts  */
 	.subscribeNewsletterTitle{
 		font-size: medium;
@@ -167,7 +181,21 @@
 }
 
 /* Large devices (laptops/desktops) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
+	/* Catalog CSS Start */
+	.catalogSectionBodyContainer{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.catalogSectionBody{
+		max-height: 54rem;
+	}
+	.catalogImageContainer{
+		flex-wrap: wrap;
+	}
+	/* Catalog CSS End */
+
 	/* Footer CSS Starts */
 	.subscribeNewsletterTitle{
 		display: none;
@@ -176,16 +204,4 @@
     	max-width: 4.5rem;
 	}
 	/* Footer CSS Ends */
-
-	/* Navbar CSS Starts */
-	.topNavbar {
-	    display: none;
-	}
-	/* Navbar CSS Ends */
-
-	/* LogoSection CSS Starts */
-	.logoSection {
-		display: none;
-	}
-	/* LogoSection CSS Ends */
 }
