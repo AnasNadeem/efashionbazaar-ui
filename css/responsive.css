@@ -10,7 +10,7 @@
 		display: block;
 	}
 	.footerNewsLetterInput {
-    	width: 10.5rem;
+    	max-width: 10.5rem;
     	font-size: small;
     	padding-left: .5rem;
 	}
@@ -68,7 +68,6 @@
 	/* LogoSection CSS Ends */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 400px) and (max-width: 576px) {
 	/* Footer CSS Starts */
 	.footerNewsLetterContainer {
@@ -81,7 +80,6 @@
 		font-size: medium;
 	}
 	.footerNewsLetterInput {
-    	width: 10.5rem;
     	font-size: small;
     	padding-left: .5rem;
 	}
@@ -140,10 +138,10 @@
 		font-size: medium;
 	}
 	.footerNewsLetterInput{
-		width: 13rem;
+		max-width: 13rem;
 	}
 	.footerNewsLetterBtn{
-		width: 4.5rem;
+		max-width: 4.5rem;
 		/*float: right;*/
 	}
 	.footerSectionBodyCardTitle {
@@ -174,11 +172,8 @@
 	.subscribeNewsletterTitle{
 		display: none;
 	}
-	.footerNewsLetterInput{
-		width: 13rem;
-	}
 	.footerNewsLetterBtn{
-    	width: 4.5rem;
+    	max-width: 4.5rem;
 	}
 	/* Footer CSS Ends */
 
