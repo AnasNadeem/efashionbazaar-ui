@@ -131,7 +131,10 @@
     <section class="productdetailSection">
         <div class="container productdetailSectionContainer">
             <div class="productdetailmainimage">
-                <img src="images/product/women-ethnic.jpg" class="productdetailmainimageImage" alt="">
+                <img src="images/product/women-ethnic.jpg" class="productdetailmainimageImage" alt="" id="product-image">
+                <div class="zoomed-image-container">
+                    <img src="images/product/women-ethnic.jpg" alt="" id="zoomed-image">
+                </div>
                 <span class="iconSpaninProductCard wishlistIconInProductCard">
                     <i class="far fa-heart navbarWishlistIcon"></i>
                 </span>
@@ -410,5 +413,30 @@
     <!-- Third party js starts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Third party js ends -->
+    <script>
+        const productImage = document.querySelector(".productdetailmainimageImage");
+        const zoomedImage = document.getElementById("zoomed-image");
+
+        productImage.addEventListener('mousemove', (e) => {
+            const {left, top, width, height} = e.target.getBoundingClientRect();
+            const x = e.clientX - left;
+            const y = e.clientY - top;
+            const scaleX = (width * 4) / productImage.offsetWidth;
+            const scaleY = (height * 4) / productImage.offsetHeight;
+
+            zoomedImage.style.display = 'block';
+
+            zoomedImage.style.width = `${width}px`;
+            zoomedImage.style.height = `${height}px`;
+            zoomedImage.style.transformOrigin = `${x}px ${y}px`;
+            zoomedImage.style.transform = `scale(${scaleX}, ${scaleY})`;
+        })
+
+        productImage.addEventListener('mouseleave', () => {
+            zoomedImage.style.transformOrigin = "initial";
+            zoomedImage.style.transform = "initial";
+            zoomedImage.style.display = 'none';
+        })
+    </script>
 </body>
 </html>
