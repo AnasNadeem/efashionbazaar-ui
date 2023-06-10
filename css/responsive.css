@@ -1,9 +1,10 @@
-/* Extra small devices (phones, 600px and down) */
 @media (max-width: 399px) {
+	/* Footer CSS Starts */
 	.footerNewsLetterContainer {
 	    display: flex;
 	    align-items: flex-start;
 	    flex-direction: column;
+		margin-top: 1rem;
 	}
 	.footerSectionTitle{
 		display: block;
@@ -19,43 +20,62 @@
     	justify-content: center;
     	flex-direction: column;
 	}
+	.footerSectionTitle {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	}
+	.subscribeNewsletterTitle{
+		display: none;
+	}
+	.footerHr{
+		margin-bottom: 1rem;
+	}
+	.footerSectionBodyCard{
+		align-items: normal;
+	}
+	.footerSectionBodyCardTitle{
+		margin:auto;
+	}
 	.footerSectionBodyCardList{
 		display: flex;
 		justify-content: space-around;
    		flex-wrap: wrap;
 	}
+	.footerSectionBodyCardListItem{
+		margin: 0 0 .4rem 1rem;
+	}
 	.footerSectionBodyCardTitle{
 		margin:auto;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
-	.footerSectionBodyCard{
-		align-items: normal;
+	.footerSectionBottomText{
+		text-align: center;
 	}
-/*Footer CSS Ends*/
+	/* Footer CSS Ends */
 
-/*Navbar CSS Starts*/
+	/* Navbar CSS Starts */
 	.topNavbar {
 	    display: none;
 	}
-/*Navbar CSS Ends*/
+	/* Navbar CSS Ends*/
 
-/*LogoSection CSS Starts*/
+	/* LogoSection CSS Starts */
 	.logoSection {
 		display: none;
 	}
-/*LogoSection CSS Ends*/
+	/* LogoSection CSS Ends */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 400px) and (max-width: 576px) {
-
-/*Footer CSS Starts */
-	.footerSectionTitleText{
-		font-size: medium;
-	}
+	/* Footer CSS Starts */
 	.footerNewsLetterContainer {
 	    display: flex;
 	    align-items: flex-start;
 	    flex-direction: column;
+		margin-top: 1rem;
 	}
 	.subscribeNewsletterTitle{
 		font-size: medium;
@@ -65,54 +85,57 @@
     	font-size: small;
     	padding-left: .5rem;
 	}
-	.footerNewsLetterContainer {
-    	justify-content: flex-start;
-	}
 	.footerSectionBody {
     	display: flex;
     	align-items: center;
     	justify-content: center;
     	flex-direction: column;
 	}
-	.footerSectionBodyCardList{
-		display: flex;
-		justify-content: space-around;
-   		flex-wrap: wrap;
-	}
-	.footerSectionBodyCardTitle{
-		margin:auto;
-	}
-	.footerSectionBodyCard{
-		align-items: normal;
-	}
 	.footerSectionTitle {
 	    display: flex;
 	    align-items: center;
 	    flex-direction: column;
 	}
-/*Footer CSS Ends*/
+	.subscribeNewsletterTitle{
+		display: none;
+	}
+	.footerHr{
+		margin-bottom: 1rem;
+	}
+	.footerSectionBodyCard{
+		align-items: normal;
+	}
+	.footerSectionBodyCardList{
+		display: flex;
+		justify-content: space-around;
+   		flex-wrap: wrap;
+	}
+	.footerSectionBodyCardListItem{
+		margin: 0 0 .4rem 1rem;
+	}
+	.footerSectionBodyCardTitle{
+		margin:auto;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	/* Footer CSS Ends */
 
-/*Navbar CSS Starts*/
+	/* Navbar CSS Starts */
 	.topNavbar {
 	    display: none;
 	}
-/*Navbar CSS Ends*/
+	/* Navbar CSS Ends */
 
-/*LogoSection CSS Starts*/
+	/* LogoSection CSS Starts */
 	.logoSection {
 		display: none;
 	}
-/*LogoSection CSS Ends*/
-
+	/* LogoSection CSS Ends */
 }
 
 /* Medium devices (landscape tablets) */
 @media (min-width: 577px) and (max-width: 767px) {
-
-/*Footer CSS Starts */
-	.footerSectionTitleText{
-		font-size: medium;
-	}
+	/* Footer CSS Starts  */
 	.subscribeNewsletterTitle{
 		font-size: medium;
 	}
@@ -130,30 +153,26 @@
 		display: block;
 		/*float: right;*/
 	}
-/*Footer CSS Ends*/
+	/* Footer CSS Ends */
 
-/*Navbar CSS Starts*/
+	/* Navbar CSS Starts */
 	.topNavbar {
 	    display: none;
 	}
-/*Navbar CSS Ends*/
+	/* Navbar CSS Ends */
 
-/*LogoSection CSS Starts*/
+	/* LogoSection CSS Starts */
 	.logoSection {
 		display: none;
 	}
-/*LogoSection CSS Ends*/
-
+	/* LogoSection CSS Ends */
 }
 
 /* Large devices (laptops/desktops) */
 @media (min-width: 768px) and (max-width: 1023px) {
-/*Footer CSS Starts */
-	.footerSectionTitleText{
-		font-size: medium;
-	}
+	/* Footer CSS Starts */
 	.subscribeNewsletterTitle{
-		font-size: medium;
+		display: none;
 	}
 	.footerNewsLetterInput{
 		width: 13rem;
@@ -161,22 +180,17 @@
 	.footerNewsLetterBtn{
     	width: 4.5rem;
 	}
-/*Footer CSS Ends*/
+	/* Footer CSS Ends */
 
-/*Navbar CSS Starts*/
+	/* Navbar CSS Starts */
 	.topNavbar {
 	    display: none;
 	}
-/*Navbar CSS Ends*/
+	/* Navbar CSS Ends */
 
-/*LogoSection CSS Starts*/
+	/* LogoSection CSS Starts */
 	.logoSection {
 		display: none;
 	}
-/*LogoSection CSS Ends*/
+	/* LogoSection CSS Ends */
 }
-/*Footer CSS Starts */
-.footerNewsLetterInputContainer{
-	display: flex;
-}
-
