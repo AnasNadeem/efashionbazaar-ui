@@ -1,0 +1,191 @@
+@media (max-width: 399px) {
+	/* Footer CSS Starts */
+	.footerNewsLetterContainer {
+	    display: flex;
+	    align-items: flex-start;
+	    flex-direction: column;
+		margin-top: 1rem;
+	}
+	.footerSectionTitle{
+		display: block;
+	}
+	.footerNewsLetterInput {
+    	max-width: 10.5rem;
+    	font-size: small;
+    	padding-left: .5rem;
+	}
+	.footerSectionBody {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: column;
+	}
+	.footerSectionTitle {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	}
+	.subscribeNewsletterTitle{
+		display: none;
+	}
+	.footerHr{
+		margin-bottom: 1rem;
+	}
+	.footerSectionBodyCard{
+		align-items: normal;
+	}
+	.footerSectionBodyCardTitle{
+		margin:auto;
+	}
+	.footerSectionBodyCardList{
+		display: flex;
+		justify-content: space-around;
+   		flex-wrap: wrap;
+	}
+	.footerSectionBodyCardListItem{
+		margin: 0 0 .4rem 1rem;
+	}
+	.footerSectionBodyCardTitle{
+		margin:auto;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.footerSectionBottomText{
+		text-align: center;
+	}
+	/* Footer CSS Ends */
+
+	/* Navbar CSS Starts */
+	.topNavbar {
+	    display: none;
+	}
+	/* Navbar CSS Ends*/
+
+	/* LogoSection CSS Starts */
+	.logoSection {
+		display: none;
+	}
+	/* LogoSection CSS Ends */
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+	/* Footer CSS Starts */
+	.footerNewsLetterContainer {
+	    display: flex;
+	    align-items: flex-start;
+	    flex-direction: column;
+		margin-top: 1rem;
+	}
+	.subscribeNewsletterTitle{
+		font-size: medium;
+	}
+	.footerNewsLetterInput {
+    	font-size: small;
+    	padding-left: .5rem;
+	}
+	.footerSectionBody {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: column;
+	}
+	.footerSectionTitle {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	}
+	.subscribeNewsletterTitle{
+		display: none;
+	}
+	.footerHr{
+		margin-bottom: 1rem;
+	}
+	.footerSectionBodyCard{
+		align-items: normal;
+	}
+	.footerSectionBodyCardList{
+		display: flex;
+		justify-content: space-around;
+   		flex-wrap: wrap;
+	}
+	.footerSectionBodyCardListItem{
+		margin: 0 0 .4rem 1rem;
+	}
+	.footerSectionBodyCardTitle{
+		margin:auto;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	/* Footer CSS Ends */
+
+	/* Navbar CSS Starts */
+	.topNavbar {
+	    display: none;
+	}
+	/* Navbar CSS Ends */
+
+	/* LogoSection CSS Starts */
+	.logoSection {
+		display: none;
+	}
+	/* LogoSection CSS Ends */
+}
+
+/* Medium devices (landscape tablets) */
+@media (min-width: 577px) and (max-width: 767px) {
+	/* Footer CSS Starts  */
+	.subscribeNewsletterTitle{
+		font-size: medium;
+	}
+	.footerNewsLetterInput{
+		max-width: 13rem;
+	}
+	.footerNewsLetterBtn{
+		max-width: 4.5rem;
+		/*float: right;*/
+	}
+	.footerSectionBodyCardTitle {
+		font-size: medium;
+	}
+	.footerNewsLetterContainer{
+		display: block;
+		/*float: right;*/
+	}
+	/* Footer CSS Ends */
+
+	/* Navbar CSS Starts */
+	.topNavbar {
+	    display: none;
+	}
+	/* Navbar CSS Ends */
+
+	/* LogoSection CSS Starts */
+	.logoSection {
+		display: none;
+	}
+	/* LogoSection CSS Ends */
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* Footer CSS Starts */
+	.subscribeNewsletterTitle{
+		display: none;
+	}
+	.footerNewsLetterBtn{
+    	max-width: 4.5rem;
+	}
+	/* Footer CSS Ends */
+
+	/* Navbar CSS Starts */
+	.topNavbar {
+	    display: none;
+	}
+	/* Navbar CSS Ends */
+
+	/* LogoSection CSS Starts */
+	.logoSection {
+		display: none;
+	}
+	/* LogoSection CSS Ends */
+}

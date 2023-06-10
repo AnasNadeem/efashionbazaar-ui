@@ -505,6 +505,9 @@ li {
     justify-content: center;
     align-items: center;
 }
+.footerNewsLetterInputContainer{
+	display: flex;
+}
 .subscribeNewsletterTitle{
     font-size: 1.2rem;
     color: var(--whiteCol);
