@@ -10,3 +10,8 @@ opensideNavbarTrigger.addEventListener('click', function () {
 // closeSideNavbarTrigger.addEventListener('click', function () {
 //     sideNavbar.classList.toggle('sideNavbarActive');
 // });
+
+
+// Copyright Year autoupdate
+let copyrightYear = document.getElementById('copyrightYear');
+copyrightYear.innerText = new Date().getFullYear();
