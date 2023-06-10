@@ -133,6 +133,12 @@
 
 /* Medium devices (landscape tablets) */
 @media (min-width: 576px) and (max-width: 767px) {
+	/* Navbar CSS Starts */
+	.topNavbar {
+	    display: none;
+	}
+	/* Navbar CSS Ends */
+
 	/* Catalog CSS Start */
 	.catalogSectionBodyContainer{
 		display: flex;
@@ -140,13 +146,28 @@
 		flex-wrap: wrap;
 	}
 	.catalogSectionBody{
-		max-height: 54rem;
+		max-height: 78rem;
 	}
 	.catalogImageContainer{
 		flex-wrap: wrap;
 	}
+	.catalogImageBody{
+		margin: 1rem;
+	}
 	/* Catalog CSS End */
 
+	/* LogoSection CSS Starts */
+	.flowerbesideMadeOfIndia{
+		max-height: 8rem;
+	}
+	.logoSectionCardImage{
+		height: 3.2rem;
+	}
+	.logoSectionCardDetailsTitle{
+		display: none;
+	}
+	/* LogoSection CSS Ends */
+	
 	/* Footer CSS Starts  */
 	.subscribeNewsletterTitle{
 		font-size: medium;
@@ -156,7 +177,6 @@
 	}
 	.footerNewsLetterBtn{
 		max-width: 4.5rem;
-		/*float: right;*/
 	}
 	.footerSectionBodyCardTitle {
 		font-size: medium;
@@ -166,18 +186,6 @@
 		/*float: right;*/
 	}
 	/* Footer CSS Ends */
-
-	/* Navbar CSS Starts */
-	.topNavbar {
-	    display: none;
-	}
-	/* Navbar CSS Ends */
-
-	/* LogoSection CSS Starts */
-	.logoSection {
-		display: none;
-	}
-	/* LogoSection CSS Ends */
 }
 
 /* Large devices (laptops/desktops) */
