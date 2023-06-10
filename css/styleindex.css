@@ -91,6 +91,31 @@ li {
     justify-content: center;
     align-items: center;
 }
+.sideNavbarAnchor{
+    display: none;
+}
+.sideNavbarlogo{
+    color: var(--secondaryAccentColor);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.sideNavbarlogo:hover{
+    cursor: pointer;
+}
+.sideNavbar{
+    display: none;
+    width: 15rem;
+    height: 100%;
+    background-color: var(--whiteCol);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 999;
+}
+.sideNavbarActive{
+    display: block;
+}
 .topNavbarSearch{
     display: flex;
     flex-direction: row;
@@ -178,7 +203,7 @@ li {
     opacity: 0;
     visibility: hidden;
     min-height: 14rem;
-    max-height: 20rem;
+    max-height: fit-content;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 #categoryNavbarListMen:hover #nav-megaDropdownForMen { 
