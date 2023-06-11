@@ -805,9 +805,13 @@ li {
     justify-content: space-between;
     align-items: start;
 }
-.productdetailmainimage{
+.productdetailImageContainer{
     width: 30%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.productdetailmainimage{
     position: relative;
     display: inline-block;
 }
@@ -830,6 +834,18 @@ li {
 .zoomed-image-container img{
     width: 100%;
     height: auto;
+}
+.additionalImageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: .5rem;
+}
+.additionalImage{
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
 }
 .productdetailContainer{
     width: 70%;
