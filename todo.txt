@@ -1,7 +1,8 @@
-# FALAK TODO:
-1. Zoom image on hover
-2. Category dropdown for type Men/Women/Kids as in Rajwadi and Manyawar
+Insha TODO:
+1. Responsive Product Detail page UI
+2. Sidenavbar UI (Mobile)
 
-# ANAS TODO:
-1. Product detail page
+
+Falak TODO:
+1. Responsive Product Detail page (Depends on Insha's work)
 2. In product card when clicks on eye, open Modal on Product details
