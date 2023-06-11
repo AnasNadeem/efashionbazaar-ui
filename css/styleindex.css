@@ -844,8 +844,9 @@ li {
 }
 .additionalImage{
     width: 100%;
-    height: 6rem;
+    height: 8rem;
     margin-right: .5rem;
+    object-fit: cover;
 }
 .productdetailContainer{
     width: 70%;
