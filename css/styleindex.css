@@ -804,6 +804,7 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+    /* margin: 0 2rem 0 2rem;  top right bottom left */
 }
 .productdetailImageContainer{
     width: 30%;
@@ -835,14 +836,18 @@ li {
     width: 100%;
     height: auto;
 }
-.additionalImageContainer{
+.additionalImageContainerHorizontal{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     margin-top: .5rem;
 }
-.additionalImage{
+.additionalImageHorizontal:nth-child(2){
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.additionalImageHorizontal{
     width: 100%;
     height: 8rem;
     object-fit: cover;
