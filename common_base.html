@@ -209,44 +209,60 @@
     <!-- Navbar ends -->
 
     <!-- Category Navbar starts -->
-    <div class="container">
+    <div class="container" id="CategoryNavbarContainer">
         <nav class="navbar navbar-light categoryNavbar">
             <div class="container">
                 <ul class="navbar-nav categoryNavbarUl mx-auto">
-                    <li class="nav-item categoryNavbarList">
+                    <li class="nav-item categoryNavbarList" id="categoryNavbarListMen">
                         <a class="nav-link" href="#">Men</a>
+                        <div class="nav-megaDropdown" id="nav-megaDropdownForMen">
+                            <div class="nav-megaDropdownContent container">
+                                <div class="megaDropdownContentBody">
+                                    <h3 class="megaDropdownContentBodyTitle">
+                                        Shop By Category
+                                    </h3>
+                                    <div class="megaDropdownContentBodyBtns">
+                                        <a href="#" class="btn categoryDropdownBtn markBorderInBtn">Kurta Pajama</a>
+                                        <a href="#" class="btn categoryDropdownBtn markBorderInBtn">Sherwani</a>
+                                        <a href="#" class="btn categoryDropdownBtn markBorderInBtn">Nehru Jacket</a>
+                                        <a href="#" class="btn categoryDropdownBtn markBorderInBtn">Kurta</a>
+                                        <a href="#" class="btn categoryDropdownBtn markBorderInBtn">Dhoti</a>
+                                        <a href="#" class="btn categoryDropdownBtn markBorderInBtn">Jodhpuri</a>
+                                        <a href="#" class="btn categoryDropdownBtn markBorderInBtn">Blazer</a>
+                                    </div>
+                                    <hr class="megaDropdownContentBodyHR">
+                                    <div class="megaDropdownContentBodyFooterBtns">
+                                        <a href="#" class="btn categoryDropdownBtn fillInnerColorBtn">New Arrival</a>
+                                        <a href="#" class="btn categoryDropdownBtn fillInnerColorBtn">Custom Order</a>
+                                        <a href="#" class="btn categoryDropdownBtn fillInnerColorBtn">Top Selling</a>
+                                        <a href="#" class="btn categoryDropdownBtn fillInnerColorBtn">View All</a>
+                                    </div>
+                                </div>
+                                <div class="megaDropdownContentFooter">
+                                    <img src="images/image 2.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item categoryNavbarList">
+                    <li class="nav-item categoryNavbarList" id="categoryNavbarListWomen">
                         <a class="nav-link" href="#">Women</a>
+                        <div class="nav-megaDropdown" id="nav-megaDropdownForWomen">
+                            <div class="nav-megaDropdownContent">
+                                
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item categoryNavbarList">
+                    <li class="nav-item categoryNavbarList" id="categoryNavbarListKids">
                         <a class="nav-link" href="#">Kids</a>
+                        <div class="nav-megaDropdown" id="nav-megaDropdownForKids">
+                            <div class="nav-megaDropdownContent">
+                                
+                            </div>
+                        </div>
                     </li>
                 </ul>
               </div>
         </nav>
-        <!-- Search bar starts -->
-        <div class="topNavbarSearch searchBelowCategoryNavbar">
-            <!-- dropdown to select category -->
-            <div class="dropdown topNavbarSearchDropdown">
-                <button class="btn dropdown-toggle topNavbarSearchDropdownBtn" type="button" id="dropdownMenu2"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    All
-                </button>
-                <ul class="dropdown-menu topNavbarSearchDropdownMenu" aria-labelledby="dropdownMenu2">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
-                </ul>
-            </div>
-            <!-- dropdown ends -->
-            <input type="text" name="search" class="form-control topNavbarSearchInput"
-                placeholder="Search Products" required>
-            <button class="btn topNavbarSearchBtn" type="submit">
-                <i class="fas fa-search searchIcon"></i>
-            </button>
-        </div>
-        <!-- Search bar ends -->
     </div>
     <!-- Category Navbar ends  -->
 
