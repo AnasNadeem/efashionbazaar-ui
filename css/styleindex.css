@@ -274,12 +274,15 @@ li {
     background: var(--whiteCol);
     left: 2px;
     right: 2px;
+    top: 100%;
     z-index: 22;
     opacity: 0;
     visibility: hidden;
     min-height: 14rem;
     max-height: fit-content;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transition: opacity .3s ease, visibility .3s ease;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 #categoryNavbarListMen:hover #nav-megaDropdownForMen { 
     opacity: 1;
