@@ -19,3 +19,24 @@ closesideNavbarTrigger.addEventListener('click', function () {
 // Copyright Year autoupdate
 let copyrightYear = document.getElementById('copyrightYear');
 copyrightYear.innerText = new Date().getFullYear();
+
+// Top SeachNavBar
+let topNavbarSearchInputId = document.getElementById("topNavbarSearchInputId")
+let topNavbarSearchInput = document.querySelector(".topNavbarSearchInput")
+console.log(topNavbarSearchInputId)
+setInterval(()=>{
+	if(topNavbarSearchInputId.placeholder === `Search Products`){
+	topNavbarSearchInputId.placeholder = "Search Category";
+	}
+	else {
+    topNavbarSearchInputId.placeholder = "Search Products";
+	}
+},10000)
+setInterval(()=>{
+	if(topNavbarSearchInput.placeholder === `Search Products` ){
+	topNavbarSearchInput.placeholder = "Search Category";
+	}
+	else {
+    topNavbarSearchInput.placeholder = "Search Products";
+	}
+},10000)
