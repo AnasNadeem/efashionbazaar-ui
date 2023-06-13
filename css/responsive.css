@@ -224,6 +224,59 @@
 	}
 	/* Catalog CSS End */
 
+	/* Product details CSS Start */
+	.additionalImageContainerVertical{
+		display: none;
+	}
+	.additionalImageContainerHorizontal{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.additionalImageHorizontal{
+		height: auto;
+		margin-bottom: .5rem;
+	}
+	.productdetailContainer{
+		width: 70%;
+	}
+	.productdetailContainerHead{
+		flex-direction: column;
+	}
+	.productdetailContainerHeadBody{
+		width: 100%;
+	}
+	.productdetailContainerHeadFooter{
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+	.productCardDetailsBtnIcon{
+		font-size: .9rem;
+	}
+	.productdetailMainTitle{
+		font-size: 1.4rem;
+	}
+	.productdetailBtn{
+		font-size: .9rem;
+	}
+	.productCardDetailsBtnIcon{
+		font-size: .8rem;
+	}
+	.productdetailOptionsItemContainer{
+		flex-wrap: wrap;
+	}
+	.productdetailOptionsItem:nth-child(1){
+		margin-bottom: 0;
+	}
+	.productdetailAdvertisementIcon{
+		height: 2rem;
+	}
+	.productdetailAdvertisementIconText{
+		display: none;
+	}
+	/* Product details CSS Ends */
+
 	/* LogoSection CSS Starts */
 	.flowerbesideMadeOfIndia{
 		max-height: 8rem;
@@ -272,6 +325,41 @@
 	}
 	/* Catalog CSS End */
 
+	/* Product details CSS Start */
+	.additionalImageContainerVertical{
+		display: none;
+	}
+	.additionalImageContainerHorizontal{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.additionalImageHorizontal{
+		height: auto;
+		margin-bottom: .5rem;
+	}
+	.productdetailContainer{
+		width: 70%;
+	}
+	.productdetailBtn{
+		font-size: .9rem;
+	}
+	.productCardDetailsBtnIcon{
+		font-size: .8rem;
+	}
+	.productdetailOptionsItemContainer{
+		flex-wrap: wrap;
+	}
+	.productdetailOptionsItem:nth-child(1){
+		margin-bottom: 0;
+	}
+	.productdetailAdvertisementIcon{
+		height: 2rem;
+	}
+	.productdetailAdvertisementIconText{
+		font-size: .8rem;
+	}
+	/* Product details CSS Ends */
+
 	/* Footer CSS Starts */
 	.subscribeNewsletterTitle{
 		display: none;
@@ -280,4 +368,19 @@
     	max-width: 4.5rem;
 	}
 	/* Footer CSS Ends */
+}
+
+@media (min-width: 1023px) and (max-width: 1200px) {
+	.additionalImageContainerVertical{
+		display: none;
+	}
+	.productdetailContainer{
+		width: 70%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.additionalImageContainerHorizontal{
+		display: none;
+	}
 }
