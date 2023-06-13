@@ -206,7 +206,7 @@ li {
     margin-right: 1.4rem; /* to separate login and cart icon */
     padding: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
 }
-.navbarWishlistIcon, .navbarCartIcon {
+.navbarWishlistIcon, .navbarCartIcon, .slideIcon {
     color: var(--secondaryAccentColor);
 }
 /* Navbar CSS Ends */
@@ -334,6 +334,9 @@ li {
     opacity: 1;
     transition: opacity .6s ease;
 }
+.bannerIndicators .active {
+    background-color: var(--goldenCol);
+}
 .carousel-inner img {
     width: 100%;
     min-height: 80vh;
@@ -434,6 +437,13 @@ li {
 }
 .wishlistIconInProductCard{
     top: 1rem;
+}
+.leftSlideIconInProductCard{
+    right: 4.4rem;
+    bottom: 2%;
+}
+.rightSlideIconInProductCard{
+    bottom: 2%;
 }
 .eyeIconInProductCard{
     top: 3.6rem;

@@ -147,8 +147,14 @@
                     <span class="iconSpaninProductCard wishlistIconInProductCard">
                         <i class="far fa-heart navbarWishlistIcon"></i>
                     </span>
+                    <span class="iconSpaninProductCard leftSlideIconInProductCard" id="prevSlideBtn">
+                        <i class="fas fa-arrow-left slideIcon"></i>
+                    </span>
+                    <span class="iconSpaninProductCard rightSlideIconInProductCard" id="nextSlideBtn">
+                        <i class="fas fa-arrow-right slideIcon"></i>
+                    </span>
                 </div>
-                <div class="additionalImageContainerHorizontal">
+                <div class="additionalImageContainerHorizontal" style="display: none;">
                     <img src="images/product/wome-addition1.jpg" class="productdetailmainimageImage additionalImageHorizontal " alt="" id="product-image">
                     <img src="images/product/wome-addition2.jpg" class="productdetailmainimageImage additionalImageHorizontal" alt="" id="product-image">
                     <img src="images/product/wome-addition3.jpg" class="productdetailmainimageImage additionalImageHorizontal" alt="" id="product-image">
@@ -554,28 +560,63 @@
     <!-- <script src="js/commonScript.js"></script> -->
     <!-- App Js ends -->
     <script>
-        const productImage = document.getElementById("product-image");
-        const zoomedImage = document.getElementById("zoomed-image");
+        // Auto image slider
+        const mainProductImage = document.getElementById("product-image");
+        const mainProductImageSrc = mainProductImage.src;
+        const additionalImages = document.querySelectorAll('.additionalImageVertical');
 
-        productImage.addEventListener('mousemove', (e) => {
+        let i = 0;
+        let slideTime = 6000;
+        let imageLength = additionalImages.length;
+        function nextSlide(){
+            if (i == imageLength){
+                i = 0;
+                mainProductImage.src = mainProductImageSrc;
+                document.getElementById("zoomed-image").src = mainProductImageSrc;
+            }else{
+                mainProductImage.src = additionalImages[i].src;
+                document.getElementById("zoomed-image").src = additionalImages[i].src;
+                i++;
+            }
+        }
+        function prevSlide(){
+            if (i == -1){
+                i = imageLength;
+                mainProductImage.src = mainProductImageSrc;
+                document.getElementById("zoomed-image").src = mainProductImageSrc;
+            }else{
+                i--;
+                mainProductImage.src = additionalImages[i].src;
+                document.getElementById("zoomed-image").src = additionalImages[i].src;
+            }
+        }
+        document.querySelector('#nextSlideBtn').addEventListener('click', nextSlide);
+        document.querySelector('#prevSlideBtn').addEventListener('click', prevSlide);
+        const nexSlideInterval = setInterval(nextSlide, slideTime);
+
+        // Product Image Zoom Effect
+        const zoomedImage = document.getElementById("zoomed-image");
+        mainProductImage.addEventListener('mousemove', (e) => {
+            e.preventDefault();
+            clearInterval(nexSlideInterval);
             const {left, top, width, height} = e.target.getBoundingClientRect();
             const x = e.clientX - left;
             const y = e.clientY - top;
-            const scaleX = (width * 4) / productImage.offsetWidth;
-            const scaleY = (height * 4) / productImage.offsetHeight;
+            const scaleX = (width * 4) / mainProductImage.offsetWidth;
+            const scaleY = (height * 4) / mainProductImage.offsetHeight;
 
             zoomedImage.style.display = 'block';
-
             zoomedImage.style.width = `${width}px`;
             zoomedImage.style.height = `${height}px`;
             zoomedImage.style.transformOrigin = `${x}px ${y}px`;
             zoomedImage.style.transform = `scale(${scaleX}, ${scaleY})`;
         })
 
-        productImage.addEventListener('mouseleave', () => {
+        mainProductImage.addEventListener('mouseleave', () => {
             zoomedImage.style.transformOrigin = "initial";
             zoomedImage.style.transform = "initial";
             zoomedImage.style.display = 'none';
+            nexSlideInterval = setInterval(nextSlide, slideTime);
         })
     </script>
 </body>
