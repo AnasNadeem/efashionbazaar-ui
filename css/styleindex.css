@@ -233,6 +233,32 @@ li {
 .categoryNavbarUl{
     flex-direction: row;
 }
+.categoryNavbarUl{
+    border: 2px solid blue;
+    border-image: conic-gradient(
+    from calc(var(--border-angle) - 0.25turn),
+    #CDB480 0,
+    #CDB480 0.25turn,
+    transparent 0.25turn,
+    transparent 0.75turn,
+    #CDB480 0.75turn,
+    #CDB480
+    ) 1;
+    animation: bg-spin 3s linear infinite;
+}
+@keyframes bg-spin {
+    to {
+    --border-angle: 1turn;
+    }
+}
+&:hover {
+    animation-play-state: paused;
+}
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
 .categoryNavbarList{
     margin: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
     font-size: 1.2rem;

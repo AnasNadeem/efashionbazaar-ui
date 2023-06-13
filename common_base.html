@@ -23,37 +23,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
     <!-- Google Fonts ends -->
-    <style>
-        /* infinite animate border around category Navbar so it seems like moving like a snake */
-        .categoryNavbarUl{
-            border: 2px solid blue;
-            border-image: conic-gradient(
-            from calc(var(--border-angle) - 0.25turn),
-            #CDB480 0,
-            #CDB480 0.25turn,
-            transparent 0.25turn,
-            transparent 0.75turn,
-            #CDB480 0.75turn,
-            #CDB480
-            ) 1;
-            animation: bg-spin 3s linear infinite;
-        }
-        @keyframes bg-spin {
-            to {
-            --border-angle: 1turn;
-            }
-        }
-
-        &:hover {
-            animation-play-state: paused;
-        }
-
-        @property --border-angle {
-            syntax: "<angle>";
-            inherits: true;
-            initial-value: 0turn;
-        }
-    </style>
     <title>efashionbazaar</title>
 </head>
 <body>
@@ -451,25 +420,5 @@
     <!-- App Js starts -->
     <script src="js/commonScript.js"></script>
     <!-- App Js ends -->
-    <script>
-        const topNavbarSearchInput = document.querySelector('.topNavbarSearchInput');
-        // topNavbarSearchInput.placeholder = 'Search for Products, Brands and More';
-        const changeList = ['Search for Products', 'Search for Brands', 'Search for More'];
-        // Change placeholder every 3 seconds with animation
-        setInterval(() => {
-            topNavbarSearchInput.classList.add('topNavbarSearchInputAnimation');
-            setTimeout(() => {
-                topNavbarSearchInput.classList.remove('topNavbarSearchInputAnimation');
-                topNavbarSearchInput.placeholder = changeList[Math.floor(Math.random() * changeList.length)];
-            }, 500);
-        }, 3000);
-        // css for placeholder animation of topNavbarSearchInput
-        // .topNavbarSearchInputAnimation::placeholder {
-        //     opacity: 0;
-        //     transition: opacity 0.5s ease-in-out;
-        // }
-
-        // 
-    </script>
 </body>
 </html>
