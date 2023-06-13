@@ -182,8 +182,20 @@
                         </ul>
                     </div>
                     <!-- dropdown ends -->
-                    <input type="text" name="search" class="form-control topNavbarSearchInput"
-                        placeholder="Search Products" required>
+                    <div class="topNavbarSearchInputContainer">
+                        <input type="text" name="search" class="form-control topNavbarSearchInput"
+                         required>
+                         <p class="topNavbarSearchInputWordWrapper placeholderFixedValue">
+                            Search
+                        </p>
+                        <p class="topNavbarSearchInputWordWrapper">
+                            Category
+                        </p>
+                         <p class="topNavbarSearchInputWordWrapper">
+                            Products
+                        </p> 
+                    </div>
+
                     <button class="btn topNavbarSearchBtn" type="submit">
                         <i class="fas fa-search searchIcon"></i>
                     </button>

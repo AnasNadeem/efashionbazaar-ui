@@ -19,3 +19,22 @@ closesideNavbarTrigger.addEventListener('click', function () {
 // Copyright Year autoupdate
 let copyrightYear = document.getElementById('copyrightYear');
 copyrightYear.innerText = new Date().getFullYear();
+
+// Search bar
+let topNavbarSearchInputWordWrapper = document.querySelectorAll('.topNavbarSearchInputWordWrapper')
+let topNavbarSearchInput = document.querySelector(".topNavbarSearchInput")
+
+topNavbarSearchInput.addEventListener("focus",()=>{ 
+    topNavbarSearchInputWordWrapper.forEach((ele)=>
+    {
+    	ele.style.display = "none"
+	})
+})
+
+topNavbarSearchInputWordWrapper.forEach((ele)=>{
+	ele.addEventListener("click",()=>{ 
+		for (var i = 0; i < topNavbarSearchInputWordWrapper.length; i++) {
+			topNavbarSearchInputWordWrapper[i].style.display = "none"
+		}
+	})
+})

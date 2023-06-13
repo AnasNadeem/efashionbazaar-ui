@@ -169,6 +169,19 @@ li {
     width: auto;
     font-size: .8rem;
 }
+.topNavbarSearchInputContainer{
+    position: relative;
+}
+.topNavbarSearchInputWordWrapper{
+    position: absolute;
+    top: 8px;
+    left: 3.5rem;
+}
+.placeholderFixedValue{
+    position: absolute;
+    top: 8px;
+    left: 0.2rem;
+}
 .topNavbarSearchInput{
     background-color: var(--whiteCol) !important;
     border: .4px solid var(--goldenCol) !important;
