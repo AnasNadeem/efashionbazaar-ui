@@ -27,6 +27,7 @@ li {
     --goldenCol: #CDB480;
     --primaryAccentColor: #F2CD88;
     --secondaryAccentColor: #8C2703;
+    --sideNavBarBackgroundColor:#FDF6EA;
 }
 
 .text-white h1,
@@ -91,6 +92,7 @@ li {
     justify-content: center;
     align-items: center;
 }
+/* Side Navbar Starts */
 .sideNavbarAnchor{
     display: none;
 }
@@ -106,20 +108,53 @@ li {
     display: none;
     width: 15rem;
     height: 100%;
-    background-color: var(--whiteCol);
+    background-color: var(--sideNavBarBackgroundColor);
     position: fixed;
     top: 0;
     left: 0;
     overflow-x: hidden;
     z-index: 999;
 }
+.SideNavbartitleList{
+    width: fit-content;
+}
+.sideNavbarCloseIcon{
+    color: #00000082;
+    font-size: larger;
+    padding-left: 1rem;
+    cursor: default;
+}
+.SideNavbartitleListHeading{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: larger;
+    margin: 1rem;
+    padding-left: .25rem;
+}
+.sideNavbarLoginBtn{
+    margin-left: 1.25rem;
+}
+.sidebarFilterBodyContainer{
+    width: 100% !important;
+    --bs-accordion-bg: none;
+    --bs-accordion-border-color: none;
+}
+.SideNavbarAboutMyContent ul{
+    padding-left: 1.25rem;
+}
+.SideNavbarContactList{
+    margin: 1rem;
+}
 .sideNavbarActive{
     display: block;
 }
+/* Side Navbar Ends */
 .topNavbarSearch{
     display: flex;
     flex-direction: row;
     min-width: 25rem;
+}
+.searchBelowCategoryNavbar{
+    display: none;
 }
 .topNavbarSearchDropdown{
     display: flex;

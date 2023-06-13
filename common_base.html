@@ -58,7 +58,105 @@
                     </a>
                 </div>
                 <!-- Sidebar starts -->
-                <div class="sideNavbar" id="sideNavbar"></div>
+                <div class="sideNavbar" id="sideNavbar">
+                    <div class="SideNavbartitleList">
+                        <div class="sideNavbarCloseIcon">
+                            x
+                        </div>
+                         <div class="SideNavbartitleListHeading">
+                            Welcome !
+                        </div>
+                         <div class="btn sideNavbarLoginBtn productCardDetailsBtn">
+                            Login
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filterBodyContainer accordion sidebarFilterBodyContainer " id="filterAccordionId">
+                        <div class="accordion-item filterAccordionItem">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button filterAccordionBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    MEN
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#filterAccordionId">
+                                <div class="accordion-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item filterAccordionItem">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button filterAccordionBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    WOMEN
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#filterAccordionId">
+                                <div class="accordion-body">
+                                   <ul>
+                                    <li>LEHENGA</li>
+                                    <li>SAREE</li>
+                                    <li>INDO WESTERN</li>
+                                    <li>NEW ARRIVALS</li>
+                                    <li>BEST SELLER</li>
+                                    <li>VIEW ALL</li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item filterAccordionItem">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button filterAccordionBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    KIDS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#filterAccordionId">
+                                <div class="accordion-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item filterAccordionItem">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button filterAccordionBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    NEW ARRIVALS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#filterAccordionId">
+                                <div class="accordion-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item filterAccordionItem">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button filterAccordionBtn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    BLOGS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#filterAccordionId">
+                                <div class="accordion-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="SideNavbarAboutMyContent">
+                        <ul>
+                            <li>MY ACCOUNT</li>
+                            <li>MY WISHLIST</li>
+                            <li>MY CART</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="SideNavbarContactList">
+                        <div class="SideNavbarContactListTitle">
+                            CONTACT
+                        </div>
+                        <div class="SideNavbarContactListIcons">
+                        </div>
+                    </div>
+                </div>
                 <!-- Sidebar ends -->
 
                 <!-- Search bar starts -->
@@ -119,6 +217,28 @@
                 </ul>
               </div>
         </nav>
+        <!-- Search bar starts -->
+        <div class="topNavbarSearch searchBelowCategoryNavbar">
+            <!-- dropdown to select category -->
+            <div class="dropdown topNavbarSearchDropdown">
+                <button class="btn dropdown-toggle topNavbarSearchDropdownBtn" type="button" id="dropdownMenu2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All
+                </button>
+                <ul class="dropdown-menu topNavbarSearchDropdownMenu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div>
+            <!-- dropdown ends -->
+            <input type="text" name="search" class="form-control topNavbarSearchInput"
+                placeholder="Search Products" required>
+            <button class="btn topNavbarSearchBtn" type="submit">
+                <i class="fas fa-search searchIcon"></i>
+            </button>
+        </div>
+        <!-- Search bar ends -->
     </div>
     <!-- Category Navbar ends  -->
 

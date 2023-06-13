@@ -5,6 +5,11 @@
 	}
 	.topNavbarSearch{
 		display: none;
+		min-width: 5rem;
+	}
+	.searchBelowCategoryNavbar{
+		display: flex;
+		margin: 1rem 0 1rem 0;
 	}
 	.sideNavbarAnchor{
 		display: block;
@@ -160,6 +165,11 @@
 	/* Navbar CSS Starts */
 	.topNavbarSearch{
 		display: none;
+		min-width: 5rem;
+	}
+	.searchBelowCategoryNavbar{
+		display: flex;
+		margin: 1rem 0 1rem 0;
 	}
 	.sideNavbarAnchor{
 		display: block;
@@ -308,6 +318,10 @@
 	/* Navbar CSS Starts */
 	.topNavbarSearch{
 		display: none;
+	}
+	.searchBelowCategoryNavbar{
+		display: flex;
+		margin: 1rem 0 1rem 0;
 	}
 	.sideNavbarAnchor{
 		display: block;
