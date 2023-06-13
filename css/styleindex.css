@@ -196,15 +196,35 @@ li {
     display: flex;
     align-items: center;
 }
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .navbarLoginBtn{
+/*For Button*/
+    --angle:90deg;
     background-color: var(--secondaryAccentColor) !important;
-    border: 1px solid var(--blackCol);
+    border: 3.6px solid var(--blackCol);
     border-radius: 0px;
     width: auto;
     color: var(--whiteCol) !important;
     font-size: .8rem;
+    border-image: conic-gradient(from var(--angle), #d79100 , #85110d , #CDB480 , #F2CD88 ) 15;
+    animation: borderRotate 2s linear infinite;
     margin-right: 1.4rem; /* to separate login and cart icon */
     padding: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
+}
+@keyframes borderRotate {
+      0% {
+        --angle :0deg;
+    }
+    50% {
+        --angle :160deg;
+    }
+    100% {
+        --angle :320deg;
+    }
 }
 .navbarWishlistIcon, .navbarCartIcon, .slideIcon {
     color: var(--secondaryAccentColor);

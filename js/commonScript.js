@@ -19,3 +19,4 @@ closesideNavbarTrigger.addEventListener('click', function () {
 // Copyright Year autoupdate
 let copyrightYear = document.getElementById('copyrightYear');
 copyrightYear.innerText = new Date().getFullYear();
+
