@@ -153,6 +153,9 @@ li {
     flex-direction: row;
     min-width: 25rem;
 }
+.searchBelowCategoryNavbar{
+    display: none;
+}
 .topNavbarSearchDropdown{
     display: flex;
     align-items: center;
