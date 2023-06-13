@@ -235,16 +235,8 @@ li {
 }
 .categoryNavbarUl{
     border: 2px solid blue;
-    border-image: conic-gradient(
-    from calc(var(--border-angle) - 0.25turn),
-    #CDB480 0,
-    #CDB480 0.25turn,
-    transparent 0.25turn,
-    transparent 0.75turn,
-    #CDB480 0.75turn,
-    #CDB480
-    ) 1;
-    animation: bg-spin 3s linear infinite;
+    border-image: conic-gradient(from var(--border-angle), #d79100 , #85110d , #CDB480 , #F2CD88 ) 15;
+    animation: bg-spin 2s linear infinite;
 }
 @keyframes bg-spin {
     to {
