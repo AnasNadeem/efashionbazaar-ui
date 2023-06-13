@@ -183,6 +183,20 @@ li {
     color: var(--blackCol);
     font-size: .8rem;
 }
+.topNavbarSearchInputAnimation::placeholder{
+    /* animation: topNavbarSearchInputAnimation 0.5s ease-in-out; */
+    transition: topNavbarSearchInputAnimation 0.5s linear;
+}
+@keyframes topNavbarSearchInputAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
 .topNavbarSearchBtn{
     background-color: var(--secondaryAccentColor) !important;
     /* border: .4px solid var(--goldenCol) !important; */
