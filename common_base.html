@@ -275,6 +275,28 @@
                 </ul>
               </div>
         </nav>
+        <!-- Search bar starts -->
+        <div class="topNavbarSearch searchBelowCategoryNavbar">
+            <!-- dropdown to select category -->
+            <div class="dropdown topNavbarSearchDropdown">
+                <button class="btn dropdown-toggle topNavbarSearchDropdownBtn" type="button" id="dropdownMenu2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All
+                </button>
+                <ul class="dropdown-menu topNavbarSearchDropdownMenu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+            </div>
+            <!-- dropdown ends -->
+            <input type="text" name="search" class="form-control topNavbarSearchInput"
+                placeholder="Search Products" required>
+            <button class="btn topNavbarSearchBtn" type="submit">
+                <i class="fas fa-search searchIcon"></i>
+            </button>
+        </div>
+        <!-- Search bar ends -->
     </div>
     <!-- Category Navbar ends  -->
 
