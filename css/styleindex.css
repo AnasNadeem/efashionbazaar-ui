@@ -469,6 +469,7 @@ li {
     right: 1.4rem;
     border-radius: 50%;
     background-color: var(--whiteCol);
+    z-index: 2;
 }
 .wishlistIconInProductCard{
     top: 1rem;
@@ -541,6 +542,20 @@ li {
     padding: .4rem 1.2rem .4rem 1.2rem; /* top right bottom left */
     border-radius: 0px;
     border: 2px solid var(--secondaryAccentColor) !important;
+}
+.productCardDetailsBtn:hover i{
+    animation: animateIconInBtn 1s ease-in-out ;
+}
+@keyframes animateIconInBtn{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 .markBorderInBtn{
     color: var(--secondaryAccentColor) !important;
@@ -688,6 +703,22 @@ li {
     font-size: .8rem;
     color: var(--whiteCol);
     margin-bottom: 0;
+}
+#scrollBtn{
+    display: none;
+    position: fixed;
+    bottom: 8%;
+    right: 6%;
+    z-index: 99;
+    border: none;
+    color: var(--whiteCol);
+    background: var(--secondaryAccentColor);
+    padding: 10px;
+    border-radius: 0px;
+}
+#scrollBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Footer CSS Ends  */
 

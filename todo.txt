@@ -1,8 +1,1 @@
-Insha TODO:
-1. Responsive Product Detail page UI
-2. Sidenavbar UI (Mobile)
-
-
-Falak TODO:
-1. Responsive Product Detail page (Depends on Insha's work)
-2. In product card when clicks on eye, open Modal on Product details
+1. In product card when clicks on eye, open Modal of Product details
