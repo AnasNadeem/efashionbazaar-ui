@@ -170,6 +170,45 @@ li {
     width: auto;
     font-size: .8rem;
 }
+.topNavbarSearchInputContainer{
+    position: relative;
+}
+.topNavbarSearchInputWordWrapper{
+    position: absolute;
+    top: 8px;
+    left: 3.5rem;
+    display: none;
+}
+.topNavbarSearchInputWordWrapperFadeUpAnimation{
+    display: block;
+    animation: topNavbarSearchInputWordWrapperFadeUpAnimation 400ms ease-in;    
+}
+@keyframes topNavbarSearchInputWordWrapperFadeUpAnimation {
+    0% {
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-25%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+.topNavbarSearchInputWordWrapperAnimation{
+    display: block;
+    animation: topNavbarSearchInputWordWrapperAnimation 400ms ease-in;    
+}
+@keyframes topNavbarSearchInputWordWrapperAnimation {
+    0% {
+        transform: translateY(50%);
+    }
+    50%{
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
 .topNavbarSearchInput{
     background-color: var(--whiteCol) !important;
     border: .4px solid var(--goldenCol) !important;
