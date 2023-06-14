@@ -28,6 +28,7 @@ li {
     --primaryAccentColor: #F2CD88;
     --secondaryAccentColor: #8C2703;
     --sideNavBarBackgroundColor:#FDF6EA;
+    --specialColor: #e04e1c;
 }
 
 .text-white h1,
@@ -347,10 +348,12 @@ li {
 }
 .bannerIndicators{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 1.8rem;
-    margin-right: 9%; /* to align indicators to right */
+    flex-direction: column;
+    top: 0%;
+    left: auto;
+    margin-right: 2%; /* to align indicators to right */
 }
 .bannerIndicators [data-bs-target] {
     box-sizing: content-box;
@@ -370,7 +373,10 @@ li {
     transition: opacity .6s ease;
 }
 .bannerIndicators .active {
-    background-color: var(--goldenCol);
+    background-color: var(--specialColor);
+}
+.bannerIndicatorBtn{
+    margin-top: 1rem;
 }
 .carousel-inner img {
     width: 100%;
@@ -385,7 +391,9 @@ li {
     height: 25%;
     background: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,0));
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .bannerTitle{
     font-family: 'Dancing Script', sans-serif;
@@ -396,13 +404,11 @@ li {
 }
 .bannerBtn{
     margin: 0 1rem 0 1rem; /* top right bottom left */
-    padding: .6rem 1.2rem .6rem 1.2rem; /* top right bottom left */
+    padding: .8rem 2.8rem .8rem 2.8rem; /* top right bottom left */
     font-size: 1rem;
-    /* font-weight: 600; */
     border-radius: 0px;
-    border: 2px solid var(--whiteCol) !important;
-    /* background-color: var(--secondaryAccentColor); */
-    color: var(--whiteCol);
+    background-color: var(--specialColor) !important;
+    color: var(--whiteCol) !important;
     transition: all .3s ease;
     text-transform: uppercase;
 }
