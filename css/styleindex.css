@@ -191,7 +191,6 @@ li {
     }
     100% {
         transform: translateY(-50%);
-        display: none;
     }
 }
 .topNavbarSearchInputWordWrapperAnimation{
