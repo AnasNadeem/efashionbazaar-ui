@@ -176,11 +176,38 @@ li {
     position: absolute;
     top: 8px;
     left: 3.5rem;
+    display: none;
 }
-.placeholderFixedValue{
-    position: absolute;
-    top: 8px;
-    left: 0.2rem;
+.topNavbarSearchInputWordWrapperFadeUpAnimation{
+    display: block;
+    animation: topNavbarSearchInputWordWrapperFadeUpAnimation 400ms ease-in;    
+}
+@keyframes topNavbarSearchInputWordWrapperFadeUpAnimation {
+    0% {
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-25%);
+    }
+    100% {
+        transform: translateY(-50%);
+        display: none;
+    }
+}
+.topNavbarSearchInputWordWrapperAnimation{
+    display: block;
+    animation: topNavbarSearchInputWordWrapperAnimation 400ms ease-in;    
+}
+@keyframes topNavbarSearchInputWordWrapperAnimation {
+    0% {
+        transform: translateY(50%);
+    }
+    50%{
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 .topNavbarSearchInput{
     background-color: var(--whiteCol) !important;

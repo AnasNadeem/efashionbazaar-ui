@@ -21,20 +21,41 @@ let copyrightYear = document.getElementById('copyrightYear');
 copyrightYear.innerText = new Date().getFullYear();
 
 // Search bar
-let topNavbarSearchInputWordWrapper = document.querySelectorAll('.topNavbarSearchInputWordWrapper')
-let topNavbarSearchInput = document.querySelector(".topNavbarSearchInput")
+let topNavbarSearchInputWordWrapper = document.querySelectorAll('.topNavbarSearchInputWordWrapper');
+let topNavbarSearchInput = document.querySelector(".topNavbarSearchInput");
 
-topNavbarSearchInput.addEventListener("focus",()=>{ 
-    topNavbarSearchInputWordWrapper.forEach((ele)=>
-    {
+topNavbarSearchInput.addEventListener("focus",()=> {
+    topNavbarSearchInputWordWrapper.forEach( ele => {
     	ele.style.display = "none"
 	})
 })
 
-topNavbarSearchInputWordWrapper.forEach((ele)=>{
-	ele.addEventListener("click",()=>{ 
-		for (var i = 0; i < topNavbarSearchInputWordWrapper.length; i++) {
-			topNavbarSearchInputWordWrapper[i].style.display = "none"
+let currentIndex = 0;
+let maxWords = topNavbarSearchInputWordWrapper.length - 1;
+const changeTextOfSearch = () => {
+	topNavbarSearchInputWordWrapper.forEach( (ele, idx) => {
+		if (idx != currentIndex){
+			ele.classList.remove('topNavbarSearchInputWordWrapperAnimation');
 		}
 	})
-})
+
+	topNavbarSearchInputWordWrapper[currentIndex].classList.add('topNavbarSearchInputWordWrapperAnimation');
+	topNavbarSearchInputWordWrapper[currentIndex].classList.remove('topNavbarSearchInputWordWrapperFadeUpAnimation');
+
+
+	if (currentIndex === maxWords){
+		currentIndex = 0;
+	}else {
+		currentIndex++;
+	}
+}
+
+setInterval(changeTextOfSearch, 2000)
+
+// topNavbarSearchInputWordWrapper.forEach((ele)=>{
+// 	ele.addEventListener("click",()=>{ 
+// 		for (var i = 0; i < topNavbarSearchInputWordWrapper.length; i++) {
+// 			topNavbarSearchInputWordWrapper[i].style.display = "none"
+// 		}
+// 	})
+// })
